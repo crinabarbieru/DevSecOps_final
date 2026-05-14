@@ -1,0 +1,19 @@
+services:
+  db:
+    image: mariadb:10.6
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_DATABASE: wordpress
+    ports:
+      - "3306:3306" 
+
+  wordpress:
+    image: wordpress:latest 
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: 12345678
+      WORDPRESS_CONFIG_EXTRA: |
+        define( 'WP_DEBUG', true ); 
