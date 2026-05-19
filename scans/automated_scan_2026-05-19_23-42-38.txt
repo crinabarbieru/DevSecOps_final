@@ -1,0 +1,77 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+                  WordPress Security Scanner
+                         Version 4.0.0
+                    An Automattic endeavor
+                    https://automattic.com
+_______________________________________________________________
+
+[+] URL: http://localhost:8080/ [::1]
+[+] Started: Tue May 19 23:42:46 2026
+[+] Command Line: wpscan --url http://localhost:8080 --enumerate u,vp,vt --force --api-token [REDACTED]
+[+] Hostname: runnervmrw5os
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.56 (Debian)
+ |  - X-Powered-By: PHP/8.0.30
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://localhost:8080/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] The external WP-Cron seems to be enabled: http://localhost:8080/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 6.9.4 identified (Latest, released on 2026-03-11).
+ | Found By: Atom Generator (Aggressive Detection)
+ |  - http://localhost:8080/?feed=atom, <generator uri="https://wordpress.org/" version="6.9.4">WordPress</generator>
+ | Confirmed By: Opml Generator (Aggressive Detection)
+ |  - http://localhost:8080/wp-links-opml.php, Match: 'generator="WordPress/6.9.4"'
+
+[i] The main theme could not be detected.
+
+[+] Enumerating Vulnerable Plugins (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+[i] No plugins Found.
+[+] Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+[i] No themes Found.
+[+] Enumerating Users (via Passive and Aggressive Methods)
+
+ Brute Forcing Author IDs -: |=================================================|
+[i] No Users Found.
+[+] WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 2
+ | Requests Remaining: 16
+[+] Finished: Tue May 19 23:42:59 2026
+[+] Requests Done: 8057
+[+] Cached Requests: 8
+[+] Most response codes received: 404: 8027, 200: 26, 403: 3, 302: 1
+[+] Data Sent: 2.164 MB
+[+] Data Received: 1.115 MB
+[+] Memory used: 337.418 MB
+[+] Elapsed time: 00:00:12
