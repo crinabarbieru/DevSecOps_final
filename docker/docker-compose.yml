@@ -2,8 +2,8 @@ services:
   db:
     image: mariadb:10.6
     environment:
-      MYSQL_ROOT_PASSWORD: ${{secrets.MYSQL_ROOT_PASSWORD}}
-      MYSQL_DATABASE: ${{secrets.MYSQL_DATABASE}}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
     ports:
       - "3306:3306" 
     volumes:
@@ -19,7 +19,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: ${{secrets.WORDPRESS_DB_PASSWORD}}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
       WORDPRESS_CONFIG_EXTRA: |
         define( 'WP_DEBUG', true ); 
     volumes:
