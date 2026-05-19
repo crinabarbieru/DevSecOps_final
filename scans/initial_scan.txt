@@ -15,14 +15,14 @@ _______________________________________________________________
 [34m[i][0m It seems like you have not updated the database for some time.
 [?] Do you want to update now? [Y]es [N]o, default: [N]n
 [32m[+][0m URL: http://host.docker.internal:8080/ [192.168.65.254]
-[32m[+][0m Started: Thu May 14 20:47:42 2026
+[32m[+][0m Started: Tue May 19 11:15:54 2026
 
 Interesting Finding(s):
 
 [32m[+][0m Headers
  | Interesting Entries:
- |  - Server: Apache/2.4.67 (Debian)
- |  - X-Powered-By: PHP/8.3.31
+ |  - Server: Apache/2.4.56 (Debian)
+ |  - X-Powered-By: PHP/8.0.30
  | Found By: Headers (Passive Detection)
  | Confidence: 100%
 
@@ -47,38 +47,130 @@ Interesting Finding(s):
  |  - https://www.iplocation.net/defend-wordpress-from-ddos
  |  - https://github.com/wpscanteam/wpscan/issues/1299
 
-[32m[+][0m WordPress version 6.9.4 identified (Latest, released on 2026-03-11).
- | Found By: Meta Generator (Passive Detection)
- |  - http://host.docker.internal:8080/, Match: 'WordPress 6.9.4'
- | Confirmed By: Atom Generator (Aggressive Detection)
- |  - http://host.docker.internal:8080/?feed=atom, <generator uri="https://wordpress.org/" version="6.9.4">WordPress</generator>
 
-[34m[i][0m The main theme could not be detected.
+[32m[+][0m WordPress version 6.2.2 identified (Insecure, released on 2023-05-20).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://host.docker.internal:8080/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://host.docker.internal:8080/, Match: 'WordPress 6.2.2'
+ |
+ | [31m[!][0m 14 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: WP 5.6-6.3.1 - Contributor+ Stored XSS via Navigation Block
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/cd130bb3-8d04-4375-a89a-883af131ed3a
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38000
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP 5.6-6.3.1 - Reflected XSS via Application Password Requests
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/da1419cc-d821-42d6-b648-bdb3c70d91f2
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP < 6.3.2 - Denial of Service via Cache Poisoning
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/6d80e09d-34d5-4fda-81cb-e703d0e56e4f
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP < 6.3.2 - Subscriber+ Arbitrary Shortcode Execution
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/3615aea0-90aa-4f9a-9792-078a90af7f59
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP < 6.3.2 - Contributor+ Comment Disclosure
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/d35b2a3d-9b41-4b4f-8e87-1b8ccb370b9f
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39999
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP < 6.3.2 - Unauthenticated Post Author Email Disclosure
+ |     Fixed in: 6.2.3
+ |     References:
+ |      - https://wpscan.com/vulnerability/19380917-4c27-4095-abf1-eba6f913b441
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5561
+ |      - https://wpscan.com/blog/email-leak-oracle-vulnerability-addressed-in-wordpress-6-3-2/
+ |      - https://wordpress.org/news/2023/10/wordpress-6-3-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WordPress < 6.4.3 - Deserialization of Untrusted Data
+ |     Fixed in: 6.2.4
+ |     References:
+ |      - https://wpscan.com/vulnerability/5e9804e5-bbd4-4836-a5f0-b4388cc39225
+ |      - https://wordpress.org/news/2024/01/wordpress-6-4-3-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WordPress < 6.4.3 - Admin+ PHP File Upload
+ |     Fixed in: 6.2.4
+ |     References:
+ |      - https://wpscan.com/vulnerability/a8e12fbe-c70b-4078-9015-cf57a05bdd4a
+ |      - https://wordpress.org/news/2024/01/wordpress-6-4-3-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WP < 6.5.2 - Unauthenticated Stored XSS
+ |     Fixed in: 6.2.5
+ |     References:
+ |      - https://wpscan.com/vulnerability/1a5c5df1-57ee-4190-a336-b0266962078f
+ |      - https://wordpress.org/news/2024/04/wordpress-6-5-2-maintenance-and-security-release/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in HTML API
+ |     Fixed in: 6.2.6
+ |     References:
+ |      - https://wpscan.com/vulnerability/2c63f136-4c1f-4093-9a8c-5e51f19eae28
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Stored XSS in Template-Part Block
+ |     Fixed in: 6.2.6
+ |     References:
+ |      - https://wpscan.com/vulnerability/7c448f6d-4531-4757-bff0-be9e3220bbbb
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WordPress < 6.5.5 - Contributor+ Path Traversal in Template-Part Block
+ |     Fixed in: 6.2.6
+ |     References:
+ |      - https://wpscan.com/vulnerability/36232787-754a-4234-83d6-6ded5e80251c
+ |      - https://wordpress.org/news/2024/06/wordpress-6-5-5/
+ |
+ | [31m[!][0m Title: WP < 6.8.3 - Author+ DOM Stored XSS
+ |     Fixed in: 6.2.8
+ |     References:
+ |      - https://wpscan.com/vulnerability/c4616b57-770f-4c40-93f8-29571c80330a
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58674
+ |      - https://patchstack.com/database/wordpress/wordpress/wordpress/vulnerability/wordpress-wordpress-wordpress-6-8-2-cross-site-scripting-xss-vulnerability
+ |      -  https://wordpress.org/news/2025/09/wordpress-6-8-3-release/
+ |
+ | [31m[!][0m Title: WP < 6.8.3 - Contributor+ Sensitive Data Disclosure
+ |     Fixed in: 6.2.8
+ |     References:
+ |      - https://wpscan.com/vulnerability/1e2dad30-dd95-4142-903b-4d5c580eaad2
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-58246
+ |      - https://patchstack.com/database/wordpress/wordpress/wordpress/vulnerability/wordpress-wordpress-wordpress-6-8-2-sensitive-data-exposure-vulnerability
+ |      - https://wordpress.org/news/2025/09/wordpress-6-8-3-release/
+
+[32m[+][0m WordPress theme in use: twentytwentythree
+ | Location: http://host.docker.internal:8080/wp-content/themes/twentytwentythree/
+ | Last Updated: 2024-11-13T00:00:00.000Z
+ | Readme: http://host.docker.internal:8080/wp-content/themes/twentytwentythree/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 1.6
+ | Style URL: http://host.docker.internal:8080/wp-content/themes/twentytwentythree/style.css
+ | Style Name: Twenty Twenty-Three
+ | Style URI: https://wordpress.org/themes/twentytwentythree
+ | Description: Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6....
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.1 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://host.docker.internal:8080/wp-content/themes/twentytwentythree/style.css, Match: 'Version: 1.1'
 
 [32m[+][0m Enumerating Vulnerable Plugins (via Aggressive Methods)
 
+[32m[+][0m Checking Plugin Versions (via Passive and Aggressive Methods)
 
 [34m[i][0m Plugin(s) Identified:
-
-[32m[+][0m akismet
- | Location: http://host.docker.internal:8080/wp-content/plugins/akismet/
- | Latest Version: 5.7
- | Last Updated: 2026-04-23T22:34:00.000Z
- |
- | Found By: Known Locations (Aggressive Detection)
- |  - http://host.docker.internal:8080/wp-content/plugins/akismet/, status: 403
- |
- | [31m[!][0m 1 vulnerability identified:
- |
- | [31m[!][0m Title: Akismet 2.5.0-3.1.4 - Unauthenticated Stored Cross-Site Scripting (XSS)
- |     Fixed in: 3.1.5
- |     References:
- |      - https://wpscan.com/vulnerability/1a2f3094-5970-4251-9ed0-ec595a0cd26c
- |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-9357
- |      - http://blog.akismet.com/2015/10/13/akismet-3-1-5-wordpress/
- |      - https://blog.sucuri.net/2015/10/security-advisory-stored-xss-in-akismet-wordpress-plugin.html
- |
- | The version could not be determined.
 
 [32m[+][0m simple-basic-contact-form
  | Location: http://host.docker.internal:8080/wp-content/plugins/simple-basic-contact-form/
@@ -122,15 +214,60 @@ Interesting Finding(s):
  | Found By: Readme - Stable Tag (Aggressive Detection)
  |  - http://host.docker.internal:8080/wp-content/plugins/simple-basic-contact-form/readme.txt
 
+[32m[+][0m wp-stripe-donation
+ | Location: http://host.docker.internal:8080/wp-content/plugins/wp-stripe-donation/
+ | Last Updated: 2026-04-14T17:47:00.000Z
+ | Readme: http://host.docker.internal:8080/wp-content/plugins/wp-stripe-donation/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 3.3.1
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://host.docker.internal:8080/wp-content/plugins/wp-stripe-donation/, status: 200
+ |
+ | [31m[!][0m 5 vulnerabilities identified:
+ |
+ | [31m[!][0m Title: Unauthorised AJAX Calls via Freemius
+ |     Fixed in: 2.9
+ |     Reference: https://wpscan.com/vulnerability/6dae6dca-7474-4008-9fe5-4c62b9f12d0a
+ |
+ | [31m[!][0m Title: Accept Stripe Donation - AidWP < 3.1.6 - CSRF
+ |     Fixed in: 3.1.6
+ |     References:
+ |      - https://wpscan.com/vulnerability/241f3eba-2be7-469c-b65c-dd5e9693d7ac
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-47422
+ |
+ | [31m[!][0m Title: Freemius SDK < 2.5.10 - Reflected Cross-Site Scripting
+ |     Fixed in: 3.2.1
+ |     References:
+ |      - https://wpscan.com/vulnerability/7fd1ad0e-9db9-47b7-9966-d3f5a8771571
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-33999
+ |
+ | [31m[!][0m Title: WordPress Stripe Donation and Payment Plugin < 3.2.4 - Missing Authorization
+ |     Fixed in: 3.2.4
+ |     References:
+ |      - https://wpscan.com/vulnerability/1b785fcc-5397-438a-a7e5-793c289e5ba8
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-50459
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/d6ec0bfd-6b3f-4de5-a7ea-73e35339202c
+ |
+ | [31m[!][0m Title: Freemius < 2.11.0 - Reflected DOM-Based XSS via url Parameter
+ |     Fixed in: 3.2.9
+ |     References:
+ |      - https://wpscan.com/vulnerability/d4eb5de8-bb2c-4eee-b4cd-b65fde3013ff
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-13362
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/d694491c-c0f5-4418-805a-db792ea4f712
+ |
+ | Version: 2.3 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://host.docker.internal:8080/wp-content/plugins/wp-stripe-donation/readme.txt
+
 [32m[+][0m WPScan DB API OK
  | Plan: free
- | Requests Done (during the scan): 3
- | Requests Remaining: 18
+ | Requests Done (during the scan): 4
+ | Requests Remaining: 8
 
-[32m[+][0m Finished: Thu May 14 20:47:47 2026
+[32m[+][0m Finished: Tue May 19 11:15:59 2026
 [32m[+][0m Requests Done: 7387
-[32m[+][0m Cached Requests: 8
+[32m[+][0m Cached Requests: 9
 [32m[+][0m Data Sent: 2.152 MB
-[32m[+][0m Data Received: 1.212 MB
-[32m[+][0m Memory used: 213.32 MB
+[32m[+][0m Data Received: 1.191 MB
+[32m[+][0m Memory used: 251.027 MB
 [32m[+][0m Elapsed time: 00:00:05
