@@ -1,0 +1,352 @@
+/* alert started */
+
+.wpsd-alert {
+    padding: 10px !important;
+    color: white;
+    display: none;
+    width: 100%;
+    padding: 10px 15px;
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    margin: 10px 0 20px;
+}
+
+.wpsd-alert.success {
+    background-color: #6ABD6E;
+    display: inline-block !important;
+}
+
+.wpsd-alert.error {
+    background-color: #F66358;
+    display: inline-block !important;
+}
+
+.wpsd-alert.warning {
+    background-color: #FFAA2B;
+    display: inline-block !important;
+}
+
+
+/* alert ended */
+
+
+/* pageloader started */
+
+#wpsd-pageloader {
+    background: rgba( 255, 255, 255, 0.8);
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+}
+
+#wpsd-pageloader img {
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+    position: absolute;
+    top: 50%;
+}
+
+
+/* pageloader ended */
+
+.wpsd-wrapper-content .dashicons,
+.dashicons-before::before {
+    font-size: 12px;
+    line-height: 46px;
+}
+
+.wpsd-master-wrapper {
+    box-shadow: 0 3px 10px #555555;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.wpsd-master-wrapper h3.wpsd-form-title {
+    font-size: 26px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wpsd-form-title-border {
+    height: 4px;
+    width: 100px;
+    margin: 0 auto;
+    background-color: #24B47E;
+    border-radius: 4px;
+}
+
+.wpsd-form-description {
+    color: #555;
+    font-size: 16px;
+    margin: 18px 0px 30px 0px;
+    width: 100%;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+img.wpsd-form-banner {
+    border: 0px solid #000;
+    width: 100%;
+    height: auto;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content {
+    padding: 30px 25px;
+    text-align: center;
+    background: #fefdfa;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #161c2d;
+    margin: 0 0 15px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content p {
+    color: #161c2d;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 30px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donation-form-label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px;
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 10px 15px;
+    height: auto;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    margin: 0 0 20px;
+    outline: none;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field::placeholder {
+    color: #000;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field:focus {
+    /*box-shadow: 0 0px 20px #808080; */
+    border: 1px solid #24B47E;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount {
+    clear: both;
+    width: 100%;
+    height: auto;
+    line-height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 20px;
+    padding: 5px 15px 5px;
+    font-size: 13px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none!important;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content #wpsd-donation-form-id #wpsd_donate_other_amount {
+    border: 1px solid #dddddd;
+    margin: 0;
+    padding: 0 4px;
+    max-width: 100px!important;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content #wpsd-donation-form-id #wpsd_donate_other_amount:focus {
+    border: 1px solid #999;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    background: #24B47E;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+    outline: none;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-5 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-5 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-6 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-6 .wpsd-wrapper-content .wpsd-donate-button:focus {
+    background: #333333;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-total-donation-today {
+    margin: 10px 0;
+    color: #798096;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-total-donation-today span#wpsd-total-donation-number {
+    color: #FF0000;
+}
+
+
+/*=============================
+Template 1
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #FF69B4;
+}
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #FF69B4;
+}
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-form-title-border {
+    background-color: #FF69B4;
+}
+
+
+/*=============================
+Template 2
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #008B8B;
+}
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #008B8B;
+}
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-form-title-border {
+    background-color: #008B8B;
+}
+
+
+/*=============================
+Template 3
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #1E90FF;
+}
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #1E90FF;
+}
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-form-title-border {
+    background-color: #1E90FF;
+}
+
+
+/*=============================
+Template 4
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #DEB887;
+}
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #DEB887;
+}
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-form-title-border {
+    background-color: #DEB887;
+}
+
+
+/*streip css*/
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+
+.StripeElement {
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+
+/*stripe css end*/
+
+
+/*=============================
+      Responsive CSS
+  ===============================*/
+
+@media(max-width:991px) {
+    .wpsd-master-wrapper .wpsd-wrapper-content {
+        padding: 30px 10px;
+    }
+}
+
+@media(max-width:767px) {
+    .wpsd-master-wrapper .wpsd-wrapper-content {
+        padding: 30px 15px;
+    }
+}

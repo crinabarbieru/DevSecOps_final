@@ -10,7 +10,9 @@ services:
       - mariadb_data:/var/lib/mysql 
 
   wordpress:
-    image: crinabarbieru/wordpress-vulnerable:latest 
+    build:
+      context: .
+      dockerfile: Dockerfile 
     platform: linux/amd64
     ports:
       - "8080:80"
