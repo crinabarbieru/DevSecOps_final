@@ -28,4 +28,4 @@ services:
 volumes:
   mariadb_data: 
   wordpress_data:
-  #some comment
+  #some comment 2
