@@ -37,7 +37,7 @@ jobs:
 
       - name: Restore Database
         run: |
-          docker exec -i $(docker ps -qf "name=db") \
+          docker exec -i $(docker ps -qf "name=docker-db-1") \
             mysql -uroot -p12345678 wordpress < docker/wordpress.sql
 
       - name: Generate Timestamp
