@@ -1,0 +1,124 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+                  WordPress Security Scanner
+                         Version 4.0.0
+                    An Automattic endeavor
+                    https://automattic.com
+_______________________________________________________________
+
+[+] URL: http://localhost:8080/ [::1]
+[+] Started: Tue May 19 22:34:25 2026
+[+] Command Line: wpscan --url http://localhost:8080 --enumerate u,vp,vt --force --api-token [REDACTED]
+[+] Hostname: runnervmrw5os
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.56 (Debian)
+ |  - X-Powered-By: PHP/8.0.30
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://localhost:8080/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] The external WP-Cron seems to be enabled: http://localhost:8080/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 6.9.4 identified (Latest, released on 2026-03-11).
+ | Found By: Atom Generator (Aggressive Detection)
+ |  - http://localhost:8080/?feed=atom, <generator uri="https://wordpress.org/" version="6.9.4">WordPress</generator>
+ | Confirmed By: Opml Generator (Aggressive Detection)
+ |  - http://localhost:8080/wp-links-opml.php, Match: 'generator="WordPress/6.9.4"'
+
+[i] The main theme could not be detected.
+
+[+] Enumerating Vulnerable Plugins (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |================
+[+] simple-basic-contact-form
+ | Location: http://localhost:8080/wp-content/plugins/simple-basic-contact-form/
+ | Last Updated: 2025-01-15 9:26pm GMT (1 year ago, per WordPress.org)
+ | Active Installs: 8,000 (per WordPress.org)
+ | Readme: http://localhost:8080/wp-content/plugins/simple-basic-contact-form/readme.txt
+ | [!] The version is out of date, the latest version is 20250114
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://localhost:8080/wp-content/plugins/simple-basic-contact-form/, status: 403
+ |
+ | [!] 4 vulnerabilities identified:
+ |
+ | [!] Title: Simple Basic Contact Form < 20221201 - Admin+ Stored XSS
+ |     UUID: c5ca22e0-b7a5-468d-8366-1855ff33851b
+ |     Fixed in: 20221201
+ |     References:
+ |      - https://wpscan.com/vulnerability/c5ca22e0-b7a5-468d-8366-1855ff33851b
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-4226
+ |
+ | [!] Title: Simple Basic Contact Form < 20240502 - Reflected Cross-Site Scripting
+ |     UUID: bf0a0135-f9fc-4728-8d23-58cb486e1224
+ |     Fixed in: 20240502
+ |     References:
+ |      - https://wpscan.com/vulnerability/bf0a0135-f9fc-4728-8d23-58cb486e1224
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4150
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/22074d7a-5dbd-4a0c-bc5d-e4c983e5edb4
+ |
+ | [!] Title: Simple Basic Contact Form < 20240511 - Unauthenticated Arbitrary Shortcode Execution
+ |     UUID: 8a9a2d91-12b7-4db7-b224-61e0b6df3e42
+ |     Fixed in: 20240511
+ |     References:
+ |      - https://wpscan.com/vulnerability/8a9a2d91-12b7-4db7-b224-61e0b6df3e42
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4144
+ |      - https://www.wordfence.com/threat-intel/vulnerabilities/id/ded1944f-662d-4d25-8277-4b1dc63b2144
+ |
+ | [!] Title: Simple Basic Contact Form < 20250114 - Admin+ Stored XSS
+ |     UUID: a9fa48f1-d7fd-4968-a122-937803f186a2
+ |     Fixed in: 20250114
+ |     References:
+ |      - https://wpscan.com/vulnerability/a9fa48f1-d7fd-4968-a122-937803f186a2
+ |      - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-12716
+ |      - https://research.cleantalk.org/CVE-2024-12716/
+ |
+ | Version: 20210619 (80% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://localhost:8080/wp-content/plugins/simple-basic-contact-form/readme.txt
+=================================|
+[i] 1 plugin(s) Identified.
+[+] Enumerating Vulnerable Themes (via Passive and Aggressive Methods)
+
+ Checking Known Locations -: |=================================================|
+[i] No themes Found.
+[+] Enumerating Users (via Passive and Aggressive Methods)
+
+ Brute Forcing Author IDs -: |=================================================|
+[i] No Users Found.
+[+] WPScan DB API OK
+ | Plan: free
+ | Requests Done (during the scan): 2
+ | Requests Remaining: 20
+[+] Finished: Tue May 19 22:34:38 2026
+[+] Requests Done: 8059
+[+] Cached Requests: 10
+[+] Most response codes received: 404: 8028, 200: 27, 403: 3, 302: 1
+[+] Data Sent: 2.164 MB
+[+] Data Received: 1.156 MB
+[+] Memory used: 342.973 MB
+[+] Elapsed time: 00:00:12
