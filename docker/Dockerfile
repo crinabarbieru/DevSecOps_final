@@ -13,3 +13,13 @@ RUN apt-get update && apt-get install -y curl \
     && cp /tmp/wordpress/*.php /var/www/html/ \
     && rm -rf /tmp/wordpress /tmp/wordpress.tar.gz \
     && apt-get remove -y curl && apt-get autoremove -y && apt-get clean
+
+# Update simple-basic-contact-form
+RUN curl -o /tmp/sbcf.zip https://downloads.wordpress.org/plugin/simple-basic-contact-form.latest-stable.zip \
+    && unzip /tmp/sbcf.zip -d /var/www/html/wp-content/plugins/ \
+    && rm /tmp/sbcf.zip
+
+# Update wp-stripe-donation
+RUN curl -o /tmp/stripe.zip https://downloads.wordpress.org/plugin/wp-stripe-donation.latest-stable.zip \
+    && unzip /tmp/stripe.zip -d /var/www/html/wp-content/plugins/ \
+    && rm /tmp/stripe.zip    
