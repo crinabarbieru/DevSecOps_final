@@ -10,7 +10,7 @@ services:
       - mariadb_data:/var/lib/mysql 
 
   wordpress:
-    image: wordpress:6.2 
+    image: crinabarbieru/wordpress-vulnerable:latest 
     ports:
       - "8080:80"
     environment:

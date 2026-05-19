@@ -1,5 +1,4 @@
-name: WordPress Scan Pipeline
-
+name: Automated WPScan
 on:
   push:
     branches: [ main ]
@@ -7,34 +6,56 @@ on:
 jobs:
   wordpress-wpscan:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Create Timestamp
-        run: echo "TIMESTAMP=$(date +'%Y%m%d_%H%M%S')" >> $GITHUB_ENV
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Start Docker 
+      - name: Start environment with docker compose
         run: |
           cd docker
           docker compose up -d
 
-      - name: Wait for WordPress
-        run: sleep 30
-
-      - name: Run WPScan
+      - name: Wait for WordPress to be ready
         run: |
-          mkdir -p scans
+          for i in $(seq 1 24); do
+            if curl -sf http://localhost:8080 > /dev/null 2>&1; then
+              echo "WordPress is up!"; break
+            fi
+            echo "Attempt $i/24 - waiting 5s..."
+            sleep 5
+          done
+
+      - name: Restore Database
+        run: |
+          docker exec -i $(docker ps -qf "name=docker-db-1") \
+            mysql -uroot -p12345678 wordpress < docker/wordpress.sql
+
+      - name: Generate Timestamp
+        run: echo "TIMESTAMP=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
+
+      - name: Create scans directory
+        run: mkdir -p scans
+
+      - name: Run WPScan via Docker
+        env:
+          WPSCAN_TOKEN: ${{ secrets.WPSCAN_API_TOKEN }}
+        run: |
           docker run --rm --network host wpscanteam/wpscan \
             --url http://localhost:8080 \
-            --api-token ${{ secrets.WPSCAN_API_TOKEN }} \
-            --enumerate vp \
-            --plugins-detection aggressive \
-            > scans/github_scan_results_${{ env.TIMESTAMP }}.txt || true
+            --enumerate u,vp,vt \
+            --force \
+            --api-token $WPSCAN_TOKEN \
+            > scans/automated_scan_${{ env.TIMESTAMP }}.txt || true
 
-      - name: Save Scan File as Artifact
+      - name: Upload WPScan artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: wpscan-reports
-          path: scans/
+          name: wpscan-report-${{ env.TIMESTAMP }}
+          path: scans/automated_scan_${{ env.TIMESTAMP }}.txt
