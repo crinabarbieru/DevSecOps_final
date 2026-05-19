@@ -1,7 +1,8 @@
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-11 01:00+0600\n"
+"POT-Creation-Date: 2026-04-14 21:10+0600\n"
 "PO-Revision-Date: 2021-07-11 01:00+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -9,136 +10,862 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ../admin\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
-"X-Poedit-KeywordsList: _e;__\n"
-"X-Poedit-SearchPath-0: .\n"
+"X-Generator: Poedit 3.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: _e;__;__(;esc_html(;esc_html\n"
+"X-Poedit-SearchPath-0: admin\n"
+"X-Poedit-SearchPath-1: front\n"
 
-#: cls-wpsd-admin.php:29 cls-wpsd-admin.php:30
+#: admin/cls-wpsd-admin.php:92 admin/cls-wpsd-admin.php:93
 msgid "WP Stripe Donation"
 msgstr ""
 
-#: cls-wpsd-admin.php:67 cls-wpsd-admin.php:68
-msgid "Donations Info"
-msgstr ""
-
-#: cls-wpsd-admin.php:76 cls-wpsd-admin.php:77
-msgid "Receipt Email"
-msgstr ""
-
-#: cls-wpsd-admin.php:85 cls-wpsd-admin.php:86
-msgid "Help & Usage"
-msgstr ""
-
-#: view/wpsd-general-settings.php:31
-msgid "General Settings"
-msgstr ""
-
-#: view/wpsd-general-settings.php:50
-msgid "Donation Info Email:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:61
-msgid "Form Title:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:70
-msgid "Form Description:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:80
-msgid "Donation For Options:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:92
-msgid "Amounts:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:104
-msgid "Form Button Text:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:113
-msgid "Currency:"
-msgstr ""
-
-#: view/wpsd-key-settings.php:20
+#: admin/cls-wpsd-admin.php:103 admin/cls-wpsd-admin.php:104
 msgid "Key Settings"
 msgstr ""
 
-#: view/wpsd-key-settings.php:35
-msgid "Publishable Key:"
+#: admin/cls-wpsd-admin.php:112 admin/cls-wpsd-admin.php:113
+#: admin/view/general.php:16
+msgid "General Settings"
 msgstr ""
 
-#: view/wpsd-key-settings.php:45
-msgid "Secret Key:"
+#: admin/cls-wpsd-admin.php:121 admin/cls-wpsd-admin.php:122
+#: admin/view/form.php:23
+msgid "Form Settings"
 msgstr ""
 
-#: view/wpsd-key-settings.php:55 view/wpsd-template-settings.php:156
+#: admin/cls-wpsd-admin.php:130 admin/cls-wpsd-admin.php:131
+#: admin/cls-wpsd-admin.php:372
+msgid "Fundraising"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:139 admin/cls-wpsd-admin.php:140
+msgid "Google reCaptcha"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:148 admin/cls-wpsd-admin.php:149
+msgid "Donation List"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:157 admin/cls-wpsd-admin.php:158
+msgid "Receipt Email"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:166 admin/cls-wpsd-admin.php:167
+msgid "Usage & Tutorial"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:328 admin/cls-wpsd-admin.php:347
+#: admin/cls-wpsd-admin.php:360 front/view/donors.php:14
+msgid "Amount"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:329 admin/cls-wpsd-admin.php:348
+#: admin/cls-wpsd-admin.php:361 front/view/donors.php:15
+msgid "Donation For"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:330 admin/cls-wpsd-admin.php:349
+#: admin/cls-wpsd-admin.php:362
+msgid "Name"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:331 admin/cls-wpsd-admin.php:350
+#: admin/cls-wpsd-admin.php:363
+msgid "Email"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:332 admin/cls-wpsd-admin.php:351
+#: admin/cls-wpsd-admin.php:364 front/view/donors.php:17
+msgid "Date"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:346 admin/cls-wpsd-admin.php:359
+msgid "Select All"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:352 admin/cls-wpsd-admin.php:365
+#: front/view/donors.php:18
+msgid "Comments"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:353 admin/cls-wpsd-admin.php:376
+msgid "Action"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:366
+msgid "Address"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:367
+msgid "City"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:368
+msgid "State"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:369
+msgid "Postcode"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:370
+msgid "Country"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:371
+msgid "Condition One"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:373
+msgid "Fundraising Start Date"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:374
+msgid "Fundraising End Date"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:375
+msgid "Gift Aid"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:464 admin/cls-wpsd-admin.php:471
+msgid "\n"
+msgstr ""
+
+#: admin/view/donations-pro.php:26 admin/view/donations.php:9
+msgid "Donations Information"
+msgstr ""
+
+#: admin/view/donations-pro.php:42
+msgid "BULK ACTION"
+msgstr ""
+
+#: admin/view/donations-pro.php:43
+msgid "Delete"
+msgstr ""
+
+#: admin/view/donations-pro.php:45
+msgid "Apply"
+msgstr ""
+
+#: admin/view/donations-pro.php:86
+msgid "DELETE"
+msgstr ""
+
+#: admin/view/donations-pro.php:108
+msgid "Export To CSV"
+msgstr ""
+
+#: admin/view/donations-pro.php:110
+msgid "Export To Excel"
+msgstr ""
+
+#: admin/view/donations-pro.php:115
+msgid "Upgrade to Professional to Export To CSV"
+msgstr ""
+
+#: admin/view/donations-pro.php:116
+msgid "Upgrade to Professional to Export To Excel"
+msgstr ""
+
+#: admin/view/donations.php:46
+msgid "Please Upgrade to Professional to unlock all donations, delete option and Export to CSV"
+msgstr ""
+
+#: admin/view/form.php:36 admin/view/fundraising.php:22
+#: admin/view/receipt-email.php:21
+msgid "Content"
+msgstr ""
+
+#: admin/view/form.php:39 admin/view/fundraising.php:25
+msgid "Styles"
+msgstr ""
+
+#: admin/view/form.php:42 admin/view/receipt-email.php:22
+msgid "Template"
+msgstr ""
+
+#: admin/view/fundraising.php:9
+msgid "Fundraising Settings"
+msgstr ""
+
+#: admin/view/general.php:34
+msgid "Donation Admin Email"
+msgstr ""
+
+#: admin/view/general.php:40
+msgid "A notification email will send when a donation is made"
+msgstr ""
+
+#: admin/view/general.php:45
+msgid "Disable Admin Email Notification"
+msgstr ""
+
+#: admin/view/general.php:51 admin/view/partial/form-content.php:85
+#: admin/view/partial/receipt-email-content.php:99
+#: admin/view/partial/receipt-email-content.php:122
+#: admin/view/partial/receipt-email-content.php:145
+#: admin/view/partial/receipt-email-content.php:169
+#: admin/view/partial/receipt-email-content.php:192
+#: admin/view/partial/receipt-email-content.php:212
+msgid "Please Upgrade Now!"
+msgstr ""
+
+#: admin/view/general.php:66
+msgid "Form Header Title"
+msgstr ""
+
+#: admin/view/general.php:78
+msgid "Form Description"
+msgstr ""
+
+#: admin/view/general.php:89
+msgid "Donation For Options"
+msgstr ""
+
+#: admin/view/general.php:97
+msgid "Use comma \",\" separated values like: Option-1, Option-2"
+msgstr ""
+
+#: admin/view/general.php:103
+msgid "Form Amounts"
+msgstr ""
+
+#: admin/view/general.php:111
+msgid "Use comma \",\" separated values like: 100,150,200"
+msgstr ""
+
+#: admin/view/general.php:114
+msgid "Minimum Amount"
+msgstr ""
+
+#: admin/view/general.php:120
+msgid "Maximum Amount"
+msgstr ""
+
+#: admin/view/general.php:129
+msgid "Form Submit Button Text"
+msgstr ""
+
+#: admin/view/general.php:141
+msgid "Currency"
+msgstr ""
+
+#: admin/view/general.php:163
+msgid "Redirect Thank You Page"
+msgstr ""
+
+#: admin/view/general.php:169 admin/view/partial/form-content.php:131
+#: admin/view/partial/form-content.php:149
+#: admin/view/partial/form-content.php:170
+#: admin/view/partial/form-content.php:189
+#: admin/view/partial/form-content.php:211
+#: admin/view/partial/form-content.php:230
+#: admin/view/partial/form-content.php:252
+#: admin/view/partial/form-content.php:274
+#: admin/view/partial/form-content.php:295
+#: admin/view/partial/form-content.php:313
+#: admin/view/partial/form-content.php:332
+#: admin/view/partial/form-content.php:411
+#: admin/view/partial/form-content.php:451
+#: admin/view/partial/form-content.php:474
+#: admin/view/partial/form-content.php:492
+#: admin/view/partial/form-content.php:512
+#: admin/view/partial/form-content.php:534
+#: admin/view/partial/form-content.php:552
+#: admin/view/partial/form-content.php:572
+#: admin/view/partial/form-styles.php:33 admin/view/partial/form-styles.php:52
+#: admin/view/partial/form-styles.php:71 admin/view/partial/form-styles.php:108
+#: admin/view/partial/form-styles.php:127
+#: admin/view/partial/form-styles.php:235
+#: admin/view/partial/form-styles.php:254
+#: admin/view/partial/form-styles.php:273
+#: admin/view/partial/form-styles.php:294
+#: admin/view/partial/form-styles.php:322
+#: admin/view/partial/form-styles.php:341
+#: admin/view/partial/form-styles.php:360
+#: admin/view/partial/receipt-email-template.php:47
+#: admin/view/partial/receipt-email-template.php:70
+msgid "Available in Professional"
+msgstr ""
+
+#: admin/view/general.php:189
+msgid "Select the page that will be redirected after successful payment."
+msgstr ""
+
+#: admin/view/general.php:198
+msgid "Exclude Stripe SDK"
+msgstr ""
+
+#: admin/view/general.php:203
+msgid "Check this if your form keeps loading!"
+msgstr ""
+
+#: admin/view/general.php:209
+msgid "Exclude Security Token"
+msgstr ""
+
+#: admin/view/general.php:214
+msgid "Enable this if you face invalid security token error"
+msgstr ""
+
+#: admin/view/general.php:224
+msgid "Copy that shortcode and apply it in any page to display donation form."
+msgstr ""
+
+#: admin/view/key-settings.php:31
+msgid "Stripe Key Settings"
+msgstr ""
+
+#: admin/view/key-settings.php:47
+msgid "Publishable Key"
+msgstr ""
+
+#: admin/view/key-settings.php:57 admin/view/recaptcha.php:76
+msgid "Secret Key"
+msgstr ""
+
+#: admin/view/key-settings.php:69 admin/view/partial/form-content.php:589
+#: admin/view/partial/form-styles.php:428
+#: admin/view/partial/form-template.php:53
+#: admin/view/partial/fundraising-content.php:88
+#: admin/view/partial/fundraising-styles.php:128
+#: admin/view/partial/receipt-email-content.php:238
+#: admin/view/partial/receipt-email-template.php:81 admin/view/recaptcha.php:86
 msgid "Save Settings"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:29
-msgid "Subject:"
+#: admin/view/key-settings.php:74
+msgid "Where to Find Stripe Keys"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:35
-msgid "We received your payment!"
+#: admin/view/partial/form-content.php:20
+msgid "Template Color"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:41
-msgid "Heading:"
+#: admin/view/partial/form-content.php:37
+msgid "Display Banner"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:47
-msgid "Thanks for your payment!"
+#: admin/view/partial/form-content.php:45
+msgid "Banner"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:53
-msgid "Footnote:"
+#: admin/view/partial/form-content.php:64
+msgid "Hide All Form Label"
 msgstr ""
 
-#: view/wpsd-receipt-email-settings.php:59
+#: admin/view/partial/form-content.php:75
+msgid "Hide Donation For"
+msgstr ""
+
+#: admin/view/partial/form-content.php:79
+msgid "If you hide this, please make sure you must have only one donation for available in general settings."
+msgstr ""
+
+#: admin/view/partial/form-content.php:98
+msgid "Donate/Payment For Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:108
+msgid "Name Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:115
+msgid "Email Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:125
+msgid "Display Address"
+msgstr ""
+
+#: admin/view/partial/form-content.php:143
+#: admin/view/partial/form-content.php:326
+#: admin/view/partial/form-content.php:486
+#: admin/view/partial/form-content.php:546
+msgid "Required"
+msgstr ""
+
+#: admin/view/partial/form-content.php:164
+msgid "Address Street Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:183
+msgid "Address Line-2 Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:205
+msgid "Address City Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:224
+msgid "Address State Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:246
+msgid "Postal Code Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:268
+msgid "Country Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:289
+msgid "Show Comments"
+msgstr ""
+
+#: admin/view/partial/form-content.php:307
+msgid "Comments Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:347
+msgid "Show Number Captcha"
+msgstr ""
+
+#: admin/view/partial/form-content.php:353
+msgid "Captcha Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:362
+msgid "Amount Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:372
+msgid "Other Amount Text"
+msgstr ""
+
+#: admin/view/partial/form-content.php:382
+msgid "Card Element Label"
+msgstr ""
+
+#: admin/view/partial/form-content.php:392
+msgid "Form Width"
+msgstr ""
+
+#: admin/view/partial/form-content.php:405
+msgid "Form Header Type"
+msgstr ""
+
+#: admin/view/partial/form-content.php:418
+msgid "tdb"
+msgstr ""
+
+#: admin/view/partial/form-content.php:418
+msgid "Title-Description-Banner"
+msgstr ""
+
+#: admin/view/partial/form-content.php:419
+msgid "btd"
+msgstr ""
+
+#: admin/view/partial/form-content.php:419
+msgid "Banner-Title-Description"
+msgstr ""
+
+#: admin/view/partial/form-content.php:420
+msgid "tbd"
+msgstr ""
+
+#: admin/view/partial/form-content.php:420
+msgid "Title-Banner-Description"
+msgstr ""
+
+#: admin/view/partial/form-content.php:430
+msgid "Form Button Width"
+msgstr ""
+
+#: admin/view/partial/form-content.php:443
+msgid "Display Total Donation Today"
+msgstr ""
+
+#: admin/view/partial/form-content.php:466
+msgid "Display Condition 1"
+msgstr ""
+
+#: admin/view/partial/form-content.php:506
+msgid "Condition 1 Text"
+msgstr ""
+
+#: admin/view/partial/form-content.php:528
+msgid "Enable Gift Aid"
+msgstr ""
+
+#: admin/view/partial/form-content.php:566
+msgid "Gift Aid Text"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:22
+msgid "Form Container"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:27 admin/view/partial/form-styles.php:178
+#: admin/view/partial/form-styles.php:229
+msgid "Border Width"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:40 admin/view/partial/form-styles.php:78
+#: admin/view/partial/form-styles.php:97 admin/view/partial/form-styles.php:175
+#: admin/view/partial/form-styles.php:182
+#: admin/view/partial/form-styles.php:189
+#: admin/view/partial/form-styles.php:242
+#: admin/view/partial/form-styles.php:280
+#: admin/view/partial/form-styles.php:308
+#: admin/view/partial/form-styles.php:367
+#: admin/view/partial/fundraising-styles.php:50
+#: admin/view/partial/fundraising-styles.php:57
+#: admin/view/partial/fundraising-styles.php:114
+#: admin/view/partial/fundraising-styles.php:121
+msgid "px"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:46 admin/view/partial/form-styles.php:155
+#: admin/view/partial/form-styles.php:207
+#: admin/view/partial/form-styles.php:248
+msgid "Border Color"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:65 admin/view/partial/form-styles.php:185
+#: admin/view/partial/form-styles.php:267
+msgid "Border Radius"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:86 admin/view/partial/form-styles.php:288
+msgid "Padding"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:90 admin/view/partial/form-styles.php:301
+msgid "top"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:92 admin/view/partial/form-styles.php:303
+msgid "right"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:94 admin/view/partial/form-styles.php:305
+msgid "bottom"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:96 admin/view/partial/form-styles.php:307
+msgid "left"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:102
+#: admin/view/partial/form-styles.php:148
+#: admin/view/partial/form-styles.php:200
+#: admin/view/partial/form-styles.php:316
+#: admin/view/partial/form-styles.php:381
+#: admin/view/partial/form-styles.php:410
+msgid "Background Color"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:121
+#: admin/view/partial/form-styles.php:162
+#: admin/view/partial/form-styles.php:214
+#: admin/view/partial/form-styles.php:335
+#: admin/view/partial/form-styles.php:388
+#: admin/view/partial/form-styles.php:417
+msgid "Font Color"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:143
+msgid "Amounts"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:171
+#: admin/view/partial/form-styles.php:354
+#: admin/view/partial/form-styles.php:395
+msgid "Font Size"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:195
+msgid "Amounts Hover"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:224
+msgid "Input Fields"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:376
+msgid "Submit Button"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:405
+msgid "Submit Button Hover"
+msgstr ""
+
+#: admin/view/partial/form-template.php:11
+msgid "Select a Template"
+msgstr ""
+
+#: admin/view/partial/form-template.php:16
+#: admin/view/partial/form-template.php:23
+msgid "Classic"
+msgstr ""
+
+#: admin/view/partial/form-template.php:29
+#: admin/view/partial/form-template.php:48
+msgid "Modern"
+msgstr ""
+
+#: admin/view/partial/form-template.php:35
+#: admin/view/partial/fundraising-content.php:17 admin/view/recaptcha.php:49
+msgid "Upgrade to Professional!"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:28
+msgid "Enable Fundraising"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:36
+msgid "Target Amount"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:44
+msgid "Start Date"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:53
+msgid "End Date"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:62
+msgid "Goal/Target Label Text"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:70
+msgid "Raised Label Text"
+msgstr ""
+
+#: admin/view/partial/fundraising-content.php:78
+msgid "Total Donations Label Text"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:19
+msgid "Upgrade to Professional"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:30
+msgid "Progress Bar Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:37
+msgid "Progress Background Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:46
+msgid "P. Bar Border Radius"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:53
+msgid "P. Bar Raised Border Radius"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:62
+msgid "Goal Label Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:69
+msgid "Goal Volume Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:78
+msgid "Raised Label Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:85
+msgid "Raised Volume Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:94
+msgid "Donations Label Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:101
+msgid "Donations Number Color"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:110
+msgid "Label Font Size"
+msgstr ""
+
+#: admin/view/partial/fundraising-styles.php:117
+msgid "Number Font Size"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:21
+msgid "Subject"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:26
+msgid "We received your payment"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:32
+msgid "Heading"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:37
+msgid "Receipt from Your Orginazation Name"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:43
+msgid "Greeting Message"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:51
+msgid "Upgrade to professional!"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:62
+msgid "The message you want to say after donor name. e.g. Thank you for your payment."
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:64
+msgid "To use donor name apply #donorName# in the content"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:66
+msgid "To use amount apply #donationAmount# in the content"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:72
+msgid "Hide Footnote"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:81
+msgid "Footnote"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:86
 msgid "If you have any question, please reply this email."
 msgstr ""
 
-#: view/wpsd-template-settings.php:38
-msgid "Template Settings"
+#: admin/view/partial/receipt-email-content.php:92
+msgid "Disable Plugin Receipt Email"
 msgstr ""
 
-#: view/wpsd-template-settings.php:57
-msgid "Template Color:"
+#: admin/view/partial/receipt-email-content.php:115
+msgid "Disable Stripe Receipt Email"
 msgstr ""
 
-#: view/wpsd-template-settings.php:74
-msgid "Display Banner:"
+#: admin/view/partial/receipt-email-content.php:138
+msgid "From Name"
 msgstr ""
 
-#: view/wpsd-template-settings.php:82
-msgid "Donation Form Banner:"
+#: admin/view/partial/receipt-email-content.php:153
+msgid "Receipt Email Header From Name"
 msgstr ""
 
-#: view/wpsd-template-settings.php:103
-msgid "Donation For Label:"
+#: admin/view/partial/receipt-email-content.php:162
+msgid "From Email"
 msgstr ""
 
-#: view/wpsd-template-settings.php:112
-msgid "Donator Name Label:"
+#: admin/view/partial/receipt-email-content.php:177
+msgid "webmaster@yourdomain.com"
 msgstr ""
 
-#: view/wpsd-template-settings.php:121
-msgid "Donator Email Label:"
+#: admin/view/partial/receipt-email-content.php:186
+msgid "Display Receipt Logo"
 msgstr ""
 
-#: view/wpsd-template-settings.php:130
-msgid "Donate Amount Label:"
+#: admin/view/partial/receipt-email-content.php:206
+msgid "Select Receipt Logo"
 msgstr ""
 
-#: view/wpsd-template-settings.php:139
-msgid "Hide Label:"
+#: admin/view/partial/receipt-email-template.php:19
+msgid "Email Template"
 msgstr ""
 
-#: view/wpsd-template-settings.php:147
-msgid "Other Amount Text:"
+#: admin/view/partial/receipt-email-template.php:24
+msgid "Default"
+msgstr ""
+
+#: admin/view/partial/receipt-email-template.php:41
+msgid "HTML"
+msgstr ""
+
+#: admin/view/partial/receipt-email-template.php:64
+msgid "Customized"
+msgstr ""
+
+#: admin/view/recaptcha.php:33
+msgid "Google reCaptcha Settings"
+msgstr ""
+
+#: admin/view/recaptcha.php:60
+msgid "Enable reCaptcha"
+msgstr ""
+
+#: admin/view/recaptcha.php:68
+msgid "Site Key"
+msgstr ""
+
+#: admin/view/receipt-email.php:9
+msgid "Receipt Email Settings"
+msgstr ""
+
+#: front/cls-wpsd-front.php:130
+msgid "Invalid security token sent"
+msgstr ""
+
+#: front/cls-wpsd-front.php:140
+msgid "Amount Missing!"
+msgstr ""
+
+#: front/cls-wpsd-front.php:149
+msgid "Please specify donation for"
+msgstr ""
+
+#: front/cls-wpsd-front.php:241
+msgid "Something went wrong!"
+msgstr ""
+
+#: front/cls-wpsd-front.php:309
+msgid "reCaptcha verification failed!"
+msgstr ""
+
+#: front/cls-wpsd-front.php:435
+msgid "New Donation Received!"
+msgstr ""
+
+#: front/cls-wpsd-front.php:436
+msgid "Name: "
+msgstr ""
+
+#: front/cls-wpsd-front.php:437
+msgid "Email: "
+msgstr ""
+
+#: front/cls-wpsd-front.php:438
+msgid "Amount: "
+msgstr ""
+
+#: front/cls-wpsd-front.php:439
+msgid "For: "
+msgstr ""
+
+#: front/cls-wpsd-front.php:442
+msgid "Gift Aid: "
+msgstr ""
+
+#: front/view/donors.php:16
+msgid "Donor"
+msgstr ""
+
+#: front/view/template/classic.php:9 front/view/template/modern.php:47
+msgid "Processing"
+msgstr ""
+
+#: front/view/template/classic.php:60
+msgid "Total"
+msgstr ""
+
+#: front/view/template/classic.php:60
+msgid "Donation Today"
+msgstr ""
+
+#: front/view/template/form.php:231
+msgid "What is"
 msgstr ""

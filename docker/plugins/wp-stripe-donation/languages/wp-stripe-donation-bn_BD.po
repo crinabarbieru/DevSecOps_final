@@ -2,143 +2,644 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-07-11 01:00+0600\n"
-"PO-Revision-Date: 2021-07-11 01:01+0600\n"
+"PO-Revision-Date: 2023-03-20 22:11+0000\n"
 "Last-Translator: \n"
-"Language-Team: \n"
+"Language-Team: Bengali (Bangladesh)\n"
 "Language: bn_BD\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ../admin\n"
 "Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-SearchPath-0: .\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.6.1; wp-5.9.3"
 
-#: cls-wpsd-admin.php:29 cls-wpsd-admin.php:30
-msgid "WP Stripe Donation"
+#: admin/cls-wpsd-admin.php:368 admin/cls-wpsd-admin.php:373
+msgid ""
+"\n"
+msgstr ""
+"\n"
+
+#: admin/view/general.php:40
+msgid "A notification email will send when a donation is made"
 msgstr ""
 
-#: cls-wpsd-admin.php:67 cls-wpsd-admin.php:68
-msgid "Donations Info"
+#: admin/cls-wpsd-admin.php:272 admin/cls-wpsd-admin.php:291
+msgid "Action"
+msgstr "কর্ম"
+
+#: admin/cls-wpsd-admin.php:285
+msgid "Address"
+msgstr "ঠিকানা"
+
+#: admin/view/partial/form-content.php:181
+msgid "Address City Label"
+msgstr "ঠিকানা, শহর লেবেল"
+
+#: admin/view/partial/form-content.php:160
+msgid "Address Line-2 Label"
+msgstr "ঠিকানা লাইন-2 লেবেল"
+
+#: admin/view/partial/form-content.php:202
+msgid "Address State Label"
+msgstr "ঠিকানা রাষ্ট্র লেবেল"
+
+#: admin/view/partial/form-content.php:139
+msgid "Address Street Label"
+msgstr "ঠিকানা রাস্তার লেবেল"
+
+#: admin/cls-wpsd-admin.php:247 admin/cls-wpsd-admin.php:266
+#: admin/cls-wpsd-admin.php:279 front/view/donors.php:10
+msgid "Amount"
+msgstr "পরিমাণ"
+
+#: admin/view/partial/form-content.php:343
+msgid "Amount Label"
+msgstr "পরিমাণ লেবেল"
+
+#: front/cls-wpsd-front.php:353
+#, fuzzy
+#| msgid "Amounts"
+msgid "Amount: "
+msgstr "পরিমাণে"
+
+#: admin/view/donations-pro.php:45
+msgid "Apply"
+msgstr "আবেদন"
+
+#: admin/view/partial/form-styles.php:118
+#: admin/view/partial/form-styles.php:256
+#: admin/view/partial/form-styles.php:324
+msgid "Background Color"
+msgstr "পটভূমির রঙ"
+
+#: admin/view/partial/form-styles.php:343
+msgid "Background Color Hover"
 msgstr ""
 
-#: cls-wpsd-admin.php:76 cls-wpsd-admin.php:77
-msgid "Receipt Email"
+#: admin/view/partial/form-content.php:43
+msgid "Banner"
+msgstr "ব্যানার"
+
+#: admin/view/partial/form-content.php:408
+msgid "Banner-Title-Description"
+msgstr "ব্যানার-শিরোনাম-বিবরণ"
+
+#: admin/view/partial/form-styles.php:48 admin/view/partial/form-styles.php:186
+msgid "Border Color"
+msgstr "সীমানা রং"
+
+#: admin/view/partial/form-styles.php:69 admin/view/partial/form-styles.php:207
+msgid "Border Radius"
+msgstr "সীমানা ব্যাসার্ধ"
+
+#: admin/view/partial/form-styles.php:27 admin/view/partial/form-styles.php:165
+msgid "Border Width"
+msgstr "সীমানা প্রস্থ"
+
+#: admin/view/partial/form-styles.php:107
+#: admin/view/partial/form-styles.php:245
+msgid "bottom"
+msgstr "নীচে"
+
+#: admin/view/partial/form-content.php:408
+msgid "btd"
+msgstr "btd"
+
+#: admin/view/donations-pro.php:42
+msgid "BULK ACTION"
+msgstr "বাল্ক কর্ম"
+
+#: admin/view/partial/form-styles.php:319
+msgid "Button"
+msgstr "বাটন"
+
+#: admin/view/partial/form-content.php:322
+msgid "Captcha Label"
+msgstr "ক্যাপচা লেবেল"
+
+#: admin/view/partial/form-content.php:361
+msgid "Card Element Label"
+msgstr "কার্ড উপাদান লেবেল"
+
+#: admin/view/general.php:180
+msgid "Check this if your form keeps loading!"
 msgstr ""
 
-#: cls-wpsd-admin.php:85 cls-wpsd-admin.php:86
-msgid "Help & Usage"
+#: admin/cls-wpsd-admin.php:286
+msgid "City"
+msgstr "সিটি"
+
+#: admin/cls-wpsd-admin.php:271 admin/cls-wpsd-admin.php:284
+#: front/view/donors.php:14
+msgid "Comments"
+msgstr "মন্তব্য"
+
+#: admin/view/partial/form-content.php:283
+msgid "Comments Label"
+msgstr "মন্তব্য লেবেল"
+
+#: admin/view/partial/form-content.php:484
+msgid "Condition 1 Text"
 msgstr ""
 
-#: view/wpsd-general-settings.php:31
+#: admin/cls-wpsd-admin.php:290
+msgid "Condition One"
+msgstr ""
+
+#: admin/view/form.php:21 admin/view/receipt-email.php:21
+msgid "Content"
+msgstr "কন্টেন্ট"
+
+#: admin/view/general.php:190
+msgid "Copy that shortcode and apply it in any page to display donation form."
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:289
+msgid "Country"
+msgstr "দেশ"
+
+#: admin/view/partial/form-content.php:244
+msgid "Country Label"
+msgstr "দেশের লেবেল"
+
+#: admin/view/general.php:131
+msgid "Currency"
+msgstr "মুদ্রা"
+
+#: admin/cls-wpsd-admin.php:251 admin/cls-wpsd-admin.php:270
+#: admin/cls-wpsd-admin.php:283 front/view/donors.php:13
+msgid "Date"
+msgstr "আপলোড"
+
+#: admin/view/partial/receipt-email-template.php:24
+msgid "Default"
+msgstr ""
+
+#: admin/view/donations-pro.php:81
+msgid "DELETE"
+msgstr "মুছে দিন"
+
+#: admin/view/donations-pro.php:43
+msgid "Delete"
+msgstr "মুছে দিন"
+
+#: admin/view/general.php:45
+msgid "Disable Admin Email Notification"
+msgstr ""
+
+#: admin/view/partial/receipt-email-content.php:74
+msgid "Disable Plugin Receipt Email"
+msgstr "নিষ্ক্রিয় প্লাগইন প্রাপ্তি ইমেইল"
+
+#: admin/view/partial/receipt-email-content.php:96
+msgid "Disable Stripe Receipt Email"
+msgstr "নিষ্ক্রিয় ডোরা প্রাপ্তি ইমেইল"
+
+#: admin/view/partial/form-content.php:121
+msgid "Display Address"
+msgstr "প্রদর্শন ঠিকানা"
+
+#: admin/view/partial/form-content.php:35
+msgid "Display Banner"
+msgstr "প্রদর্শন ব্যানার"
+
+#: admin/view/partial/form-content.php:464
+msgid "Display Condition 1"
+msgstr ""
+
+#: admin/view/partial/form-content.php:442
+msgid "Display Total Donation Today"
+msgstr "প্রদর্শন মোট দান আজ"
+
+#: admin/view/partial/form-content.php:94
+msgid "Donate/Payment For Label"
+msgstr "দান/পেমেন্ট জন্য লেবেল"
+
+#: admin/view/general.php:34
+msgid "Donation Admin Email"
+msgstr "দান অ্যাডমিন ইমেইল"
+
+#: admin/cls-wpsd-admin.php:248 admin/cls-wpsd-admin.php:267
+#: admin/cls-wpsd-admin.php:280 front/view/donors.php:11
+msgid "Donation For"
+msgstr "অনুদানের জন্য"
+
+#: admin/view/general.php:88
+msgid "Donation For Options"
+msgstr "অনুদানের জন্য অপশন"
+
+#: admin/cls-wpsd-admin.php:68 admin/cls-wpsd-admin.php:69
+msgid "Donation List"
+msgstr "দান তালিকা"
+
+#: front/view/payment-form.php:336
+msgid "Donation Today"
+msgstr ""
+
+#: admin/view/donations-pro.php:26 admin/view/donations.php:9
+msgid "Donations Information"
+msgstr "অনুদান তথ্য"
+
+#: front/view/donors.php:12
+msgid "Donor"
+msgstr ""
+
+#: admin/cls-wpsd-admin.php:250 admin/cls-wpsd-admin.php:269
+#: admin/cls-wpsd-admin.php:282
+msgid "Email"
+msgstr "ইমেইল"
+
+#: admin/view/partial/form-content.php:112
+msgid "Email Label"
+msgstr "ইমেইল লেবেল"
+
+#: admin/view/partial/receipt-email-template.php:19
+msgid "Email Template"
+msgstr ""
+
+#: front/cls-wpsd-front.php:352
+msgid "Email: "
+msgstr ""
+
+#: admin/view/general.php:167
+msgid ""
+"Enter the slug of your page where it will be redirected after successful "
+"payment."
+msgstr ""
+"লিখুন স্লাগ্ আপনার পৃষ্ঠার, যেখানে এটা আপনাকে পুনঃনির্দেশিত করা হবে পরে, সফল "
+"পেমেন্ট."
+
+#: admin/view/general.php:175
+msgid "Exclude Stripe SDK"
+msgstr "অগ্রাহ্য ডোরা SDK এর"
+
+#: admin/view/donations-pro.php:102
+msgid "EXPORT TO CSV"
+msgstr "এক্সপোর্ট CSV"
+
+#: admin/view/partial/form-styles.php:139
+#: admin/view/partial/form-styles.php:277
+#: admin/view/partial/form-styles.php:364
+msgid "Font Color"
+msgstr "ফন্ট রঙ"
+
+#: admin/view/partial/form-styles.php:383
+msgid "Font Color Hover"
+msgstr ""
+
+#: admin/view/partial/form-styles.php:298
+#: admin/view/partial/form-styles.php:404
+msgid "Font Size"
+msgstr "ফন্টের আকার"
+
+#: admin/view/partial/receipt-email-content.php:64
+msgid "Footnote"
+msgstr "পাদটীকা"
+
+#: admin/view/partial/receipt-email-template.php:47
+msgid "For HTML Template Upgrade to Professional"
+msgstr ""
+
+#: front/cls-wpsd-front.php:354
+msgid "For: "
+msgstr ""
+
+#: admin/view/general.php:101
+msgid "Form Amounts"
+msgstr ""
+
+#: admin/view/partial/form-content.php:418
+msgid "Form Button Width"
+msgstr "ফর্ম বাটন প্রস্থ"
+
+#: admin/view/partial/form-styles.php:22
+msgid "Form Container"
+msgstr "ফরম ধারক"
+
+#: admin/view/general.php:77
+msgid "Form Description"
+msgstr "ফর্ম বিবরণ:"
+
+#: admin/view/general.php:66
+msgid "Form Header Title"
+msgstr ""
+
+#: admin/view/partial/form-content.php:394
+msgid "Form Header Type"
+msgstr "ফর্ম হেডার টাইপ"
+
+#: admin/cls-wpsd-admin.php:59 admin/cls-wpsd-admin.php:60
+#: admin/view/form.php:9
+msgid "Form Settings"
+msgstr "ফর্ম সেটিংস"
+
+#: admin/view/general.php:120
+msgid "Form Submit Button Text"
+msgstr ""
+
+#: admin/view/partial/form-content.php:370
+msgid "Form Width"
+msgstr "ফর্ম প্রস্থ"
+
+#: admin/view/partial/receipt-email-content.php:141
+msgid "From Email"
+msgstr "ইমেইল থেকে"
+
+#: admin/view/partial/receipt-email-content.php:118
+msgid "From Name"
+msgstr "নাম থেকে"
+
+#: admin/cls-wpsd-admin.php:50 admin/cls-wpsd-admin.php:51
+#: admin/view/general.php:16
 msgid "General Settings"
+msgstr "সাধারণ সেটিংস"
+
+#: admin/view/partial/receipt-email-content.php:40
+msgid "Greeting Message"
 msgstr ""
 
-#: view/wpsd-general-settings.php:50
-msgid "Donation Info Email:"
+#: admin/view/partial/receipt-email-content.php:30
+msgid "Heading"
+msgstr "শিরোনাম"
+
+#: admin/view/partial/form-content.php:61
+msgid "Hide All Form Label"
+msgstr "লুকান সমস্ত ফর্ম লেবেল"
+
+#: admin/view/partial/form-content.php:71
+msgid "Hide Donation For"
+msgstr "আড়াল দানের জন্য"
+
+#: admin/view/partial/receipt-email-template.php:41
+msgid "HTML"
 msgstr ""
 
-#: view/wpsd-general-settings.php:61
-msgid "Form Title:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:70
-msgid "Form Description:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:80
-msgid "Donation For Options:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:92
-msgid "Amounts:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:104
-msgid "Form Button Text:"
-msgstr ""
-
-#: view/wpsd-general-settings.php:113
-msgid "Currency:"
-msgstr ""
-
-#: view/wpsd-key-settings.php:20
-msgid "Key Settings"
-msgstr ""
-
-#: view/wpsd-key-settings.php:35
-msgid "Publishable Key:"
-msgstr ""
-
-#: view/wpsd-key-settings.php:45
-msgid "Secret Key:"
-msgstr ""
-
-#: view/wpsd-key-settings.php:55 view/wpsd-template-settings.php:156
-msgid "Save Settings"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:29
-msgid "Subject:"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:35
-msgid "We received your payment!"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:41
-msgid "Heading:"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:47
-msgid "Thanks for your payment!"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:53
-msgid "Footnote:"
-msgstr ""
-
-#: view/wpsd-receipt-email-settings.php:59
+#: admin/view/partial/receipt-email-content.php:69
 msgid "If you have any question, please reply this email."
+msgstr "যদি আপনার কোন প্রশ্ন থাকে, দয়া করে উত্তর দিন এই ইমেইল."
+
+#: admin/view/partial/form-content.php:75
+msgid ""
+"If you hide this, please make sure you must have only one donation for "
+"available in general settings."
+msgstr ""
+"যদি আপনি লুকাতে এই, নিশ্চিত করুন যে আপনি থাকতে হবে, শুধুমাত্র একটি দানের "
+"জন্য উপলব্ধ সাধারণ সেটিংস."
+
+#: admin/view/partial/form-styles.php:160
+msgid "Input Fields"
+msgstr "ইনপুট ক্ষেত্র"
+
+#: admin/cls-wpsd-admin.php:41 admin/cls-wpsd-admin.php:42
+msgid "Key Settings"
+msgstr "কী সেটিংস"
+
+#: admin/view/partial/form-styles.php:109
+#: admin/view/partial/form-styles.php:247
+msgid "left"
+msgstr "বাম"
+
+#: admin/view/general.php:112
+msgid "Minimum Amount"
 msgstr ""
 
-#: view/wpsd-template-settings.php:38
-msgid "Template Settings"
+#: admin/cls-wpsd-admin.php:249 admin/cls-wpsd-admin.php:268
+#: admin/cls-wpsd-admin.php:281
+msgid "Name"
+msgstr "নাম"
+
+#: admin/view/partial/form-content.php:103
+msgid "Name Label"
+msgstr "নাম লেবেল"
+
+#: front/cls-wpsd-front.php:351
+msgid "Name: "
 msgstr ""
 
-#: view/wpsd-template-settings.php:57
-msgid "Template Color:"
+#: front/cls-wpsd-front.php:350
+msgid "New Donation Received!"
 msgstr ""
 
-#: view/wpsd-template-settings.php:74
-msgid "Display Banner:"
+#: admin/view/partial/form-content.php:352
+msgid "Other Amount Text"
+msgstr "অন্যান্য পরিমাণ, টেক্সট"
+
+#: admin/view/partial/form-styles.php:90 admin/view/partial/form-styles.php:228
+msgid "Padding"
+msgstr "প্যাডিং"
+
+#: admin/view/general.php:51 admin/view/partial/form-content.php:81
+#: admin/view/partial/receipt-email-content.php:81
+#: admin/view/partial/receipt-email-content.php:103
+#: admin/view/partial/receipt-email-content.php:125
+#: admin/view/partial/receipt-email-content.php:148
+msgid "Please Upgrade Now!"
+msgstr "আপগ্রেড করুন এখন!"
+
+#: admin/view/partial/form-content.php:223
+msgid "Postal Code Label"
+msgstr "পোস্টাল কোড লেবেল"
+
+#: admin/cls-wpsd-admin.php:288
+msgid "Postcode"
+msgstr "পোস্টকোড"
+
+#: front/view/payment-form.php:54
+msgid "Processing"
 msgstr ""
 
-#: view/wpsd-template-settings.php:82
-msgid "Donation Form Banner:"
+#: admin/view/key-settings.php:43
+msgid "Publishable Key"
+msgstr "Publishable কী"
+
+#: admin/view/partial/form-styles.php:40 admin/view/partial/form-styles.php:82
+#: admin/view/partial/form-styles.php:110
+#: admin/view/partial/form-styles.php:178
+#: admin/view/partial/form-styles.php:220
+#: admin/view/partial/form-styles.php:248
+#: admin/view/partial/form-styles.php:311
+msgid "px"
+msgstr "px"
+
+#: admin/cls-wpsd-admin.php:77 admin/cls-wpsd-admin.php:78
+msgid "Receipt Email"
+msgstr "প্রাপ্তি ইমেইল"
+
+#: admin/view/partial/receipt-email-content.php:133
+msgid "Receipt Email Header From Name"
+msgstr "প্রাপ্তি ইমেইল হেডার থেকে নাম"
+
+#: admin/view/receipt-email.php:9
+msgid "Receipt Email Settings"
+msgstr "প্রাপ্তি ইমেইল সেটিংস"
+
+#: admin/view/partial/receipt-email-content.php:35
+msgid "Receipt from Your Orginazation Name"
 msgstr ""
 
-#: view/wpsd-template-settings.php:103
-msgid "Donation For Label:"
+#: admin/view/general.php:152
+msgid "Redirect Thank You Page"
 msgstr ""
 
-#: view/wpsd-template-settings.php:112
-msgid "Donator Name Label:"
+#: admin/view/partial/form-styles.php:105
+#: admin/view/partial/form-styles.php:243
+msgid "right"
+msgstr "ডান"
+
+#: admin/view/key-settings.php:65 admin/view/partial/form-content.php:507
+#: admin/view/partial/form-styles.php:427
+#: admin/view/partial/receipt-email-content.php:166
+#: admin/view/partial/receipt-email-template.php:58
+msgid "Save Settings"
+msgstr "সেটিংস সংরক্ষণ করুন"
+
+#: admin/view/key-settings.php:53
+msgid "Secret Key"
+msgstr "গোপন কী"
+
+#: admin/cls-wpsd-admin.php:265 admin/cls-wpsd-admin.php:278
+msgid "Select All"
+msgstr "সব নির্বাচন করুন"
+
+#: admin/view/partial/form-content.php:304
+msgid "Show Captcha"
+msgstr "শো ক্যাপচা"
+
+#: admin/view/partial/form-content.php:265
+msgid "Show Comments"
+msgstr "শো মন্তব্য"
+
+#: front/cls-wpsd-front.php:194
+msgid "Something went wrong!"
 msgstr ""
 
-#: view/wpsd-template-settings.php:121
-msgid "Donator Email Label:"
+#: admin/cls-wpsd-admin.php:287
+msgid "State"
+msgstr "রাষ্ট্র"
+
+#: admin/view/key-settings.php:27
+msgid "Stripe Key Settings"
+msgstr "ডোরা কী সেটিংস"
+
+#: admin/view/form.php:22
+msgid "Styles"
+msgstr "শৈলী"
+
+#: admin/view/partial/receipt-email-content.php:20
+msgid "Subject"
+msgstr "বিষয়"
+
+#: admin/view/partial/form-content.php:409
+msgid "tbd"
+msgstr "tbd"
+
+#: admin/view/partial/form-content.php:407
+msgid "tdb"
+msgstr "tdb"
+
+#: admin/view/receipt-email.php:22
+msgid "Template"
 msgstr ""
 
-#: view/wpsd-template-settings.php:130
-msgid "Donate Amount Label:"
+#: admin/view/partial/form-content.php:19
+msgid "Template Color"
+msgstr "টেমপ্লেট রঙ"
+
+#: admin/view/partial/receipt-email-content.php:59
+msgid ""
+"The message you want to say after donor name. e.g. Thank you for your "
+"payment."
 msgstr ""
 
-#: view/wpsd-template-settings.php:139
-msgid "Hide Label:"
+#: admin/view/partial/form-content.php:409
+msgid "Title-Banner-Description"
+msgstr "শিরোনাম-ব্যানার-বিবরণ"
+
+#: admin/view/partial/form-content.php:407
+msgid "Title-Description-Banner"
+msgstr "শিরোনাম-বর্ণনা-ব্যানার"
+
+#: admin/view/partial/form-styles.php:103
+#: admin/view/partial/form-styles.php:241
+msgid "top"
+msgstr "শীর্ষ"
+
+#: front/view/payment-form.php:336
+msgid "Total"
 msgstr ""
 
-#: view/wpsd-template-settings.php:147
-msgid "Other Amount Text:"
+#: admin/view/general.php:158 admin/view/partial/form-content.php:127
+#: admin/view/partial/form-content.php:145
+#: admin/view/partial/form-content.php:166
+#: admin/view/partial/form-content.php:187
+#: admin/view/partial/form-content.php:208
+#: admin/view/partial/form-content.php:229
+#: admin/view/partial/form-content.php:250
+#: admin/view/partial/form-content.php:271
+#: admin/view/partial/form-content.php:289
+#: admin/view/partial/form-content.php:310
+#: admin/view/partial/form-content.php:328
+#: admin/view/partial/form-content.php:376
+#: admin/view/partial/form-content.php:400
+#: admin/view/partial/form-content.php:424
+#: admin/view/partial/form-content.php:450
+#: admin/view/partial/form-content.php:472
+#: admin/view/partial/form-content.php:490
+#: admin/view/partial/form-styles.php:33 admin/view/partial/form-styles.php:54
+#: admin/view/partial/form-styles.php:75 admin/view/partial/form-styles.php:96
+#: admin/view/partial/form-styles.php:124
+#: admin/view/partial/form-styles.php:145
+#: admin/view/partial/form-styles.php:171
+#: admin/view/partial/form-styles.php:192
+#: admin/view/partial/form-styles.php:213
+#: admin/view/partial/form-styles.php:234
+#: admin/view/partial/form-styles.php:262
+#: admin/view/partial/form-styles.php:283
+#: admin/view/partial/form-styles.php:304
+#: admin/view/partial/form-styles.php:330
+#: admin/view/partial/form-styles.php:349
+#: admin/view/partial/form-styles.php:370
+#: admin/view/partial/form-styles.php:389
+#: admin/view/partial/form-styles.php:410
+msgid "Upgrade to Professional!"
+msgstr "আপগ্রেড করার জন্য পেশাদার!"
+
+#: admin/view/partial/receipt-email-content.php:48
+msgid "Upgrade to professional!"
 msgstr ""
+
+#: admin/cls-wpsd-admin.php:86 admin/cls-wpsd-admin.php:87
+msgid "Usage & Tutorial"
+msgstr "ব্যবহার ও টিউটোরিয়াল"
+
+#: admin/view/general.php:109
+msgid "Use comma \",\" separated values like: 100,150,200"
+msgstr "ব্যবহার কমা \",\" দ্বারা পৃথক মান ভালো: 100,150,200"
+
+#: admin/view/general.php:96
+msgid "Use comma \",\" separated values like: Option-1, Option-2"
+msgstr "ব্যবহার কমা \",\" দ্বারা পৃথক মান মত,: বিকল্প-1, বিকল্প-2"
+
+#: admin/view/partial/receipt-email-content.php:25
+msgid "We received your payment"
+msgstr "আমরা আপনার পেমেন্ট পেয়েছি"
+
+#: admin/view/partial/receipt-email-content.php:156
+msgid "webmaster@yourdomain.com"
+msgstr ""
+
+#: front/view/payment-form.php:311
+msgid "What is"
+msgstr ""
+
+#: admin/view/key-settings.php:70
+msgid "Where to Find Stripe Keys"
+msgstr "যেখানে খুঁজে বের করতে ডোরা কি"
+
+#: admin/cls-wpsd-admin.php:30 admin/cls-wpsd-admin.php:31
+msgid "WP Stripe Donation"
+msgstr "ডাব্লু ডোরা দান"

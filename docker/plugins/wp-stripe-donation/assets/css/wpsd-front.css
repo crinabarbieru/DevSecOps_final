@@ -1,0 +1,546 @@
+/* alert started */
+
+.wpsd-alert {
+    padding: 10px !important;
+    color: white;
+    display: none;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 5px;
+    transition: all 0.3s linear;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.wpsd-alert.success {
+    background-color: #6ABD6E;
+    display: inline-block !important;
+}
+
+.wpsd-alert.error {
+    background-color: #F66358;
+    display: inline-block !important;
+}
+
+.wpsd-alert.warning {
+    background-color: #FFAA2B;
+    display: inline-block !important;
+}
+
+
+/* alert ended */
+
+
+/* Selectize Started */
+
+.selectize-input {
+    min-height: 44px;
+    line-height: 30px;
+    text-align: left;
+    padding: 6px 10px;
+}
+
+.selectize-control.single .selectize-input::after {
+    right: 10px;
+    margin-top: -2px;
+}
+
+.selectize-dropdown [data-selectable].option {
+    font-size: 12px;
+    text-align: left;
+}
+
+
+/* Selectize Ended */
+
+
+/* pageloader started */
+
+#wpsd-pageloader {
+    background: #242424;
+    opacity: 0.8;
+    z-index: 9999;
+    display: none;
+    position: absolute;
+    text-align: center;
+    height: 95%;
+    width: 88%;
+}
+
+#wpsd-pageloader img {
+    position: absolute;
+    transition: .5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/* pageloader ended */
+
+.wpsd-wrapper-content .dashicons,
+.dashicons-before::before {
+    font-size: 12px;
+    line-height: 46px;
+}
+
+.wpsd-master-wrapper {
+    box-shadow: 0 3px 10px #555555;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: #fefdfa;
+    margin: 0 auto;
+    white-space: initial;
+    padding: 0 20px;
+}
+
+.wpsd-master-wrapper h3.wpsd-form-title {
+    font-size: 26px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.wpsd-form-title-border {
+    height: 4px;
+    width: 100px;
+    margin: 20px auto 0 auto;
+    background-color: #24B47E;
+    border-radius: 4px;
+}
+
+.wpsd-form-description {
+    color: #555;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wpsd-master-wrapper .wpsd-form-description p {
+    margin: 0;
+    padding: 0;
+}
+
+img.wpsd-form-banner {
+    border: 0px solid #000;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content span.required-sign,
+.wpsd-modern-wrapper>.modern-right span.required-sign {
+    display: inline-block;
+    color: red;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #161c2d;
+    margin: 0 0 15px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content p {
+    color: #161c2d;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 30px;
+}
+
+#wpsd-donation-form-id {
+    padding-bottom: 20px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donation-form-label,
+.wpsd-modern-wrapper>.modern-right .wpsd-donation-form-label {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 8px 2px;
+    height: auto;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field,
+.wpsd-modern-wrapper>.modern-right .wpsd-text-field {
+    width: 100%;
+    border: 1px solid #dddddd;
+    padding: 10px 15px;
+    height: auto;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+    margin: 0 0 20px;
+    outline: none;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field:focus,
+.wpsd-modern-wrapper>.modern-right .wpsd-text-field:focus {
+    border: 1px solid #CC0000;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-text-field::placeholder,
+.wpsd-modern-wrapper>.modern-right .wpsd-text-field::placeholder {
+    color: #000;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount,
+.wpsd-modern-wrapper>.modern-right ul#wpsd_donate_amount {
+    clear: both;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 20px;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount li,
+.wpsd-modern-wrapper>.modern-right ul#wpsd_donate_amount li,
+.wpsd-modern-wrapper>.modern-right .wpsd_donate_amount_other_li {
+    list-style: none!important;
+    border: 1px solid #DDD;
+    margin-right: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 2px rgba(47, 47, 55, 0.25);
+    min-width: 50px;
+    height: 50px;
+    line-height: 48px;
+    transition: all 0.3s linear;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount li label,
+.wpsd-modern-wrapper>.modern-right ul#wpsd_donate_amount li label {
+    min-width: 48px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 0 10px;
+    transition: all 0.3s linear;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount li label:hover,
+.wpsd-modern-wrapper>.modern-right ul#wpsd_donate_amount li label:hover {
+    cursor: pointer;
+    background: #156CCC;
+    color: #FFF;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content ul#wpsd_donate_amount li.active label,
+.wpsd-modern-wrapper>.modern-right ul#wpsd_donate_amount li.active label {
+    background: #156CCC;
+    color: #FFF;
+    border: 1px solid #156CCC;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd_donate_amount_other_li,
+.wpsd-modern-wrapper>.modern-right .wpsd_donate_amount_other_li {
+    background: #FFF;
+    border: 1px solid #ddd;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    box-shadow: none;
+    height: 45px;
+    line-height: 43px;
+    border-radius: 3px;
+}
+
+
+/* Amount Buttons Started */
+
+.wpsd-amounts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.wpsd-amounts-wrapper button {
+    flex: 1;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    background: #fff;
+    color: #444;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.wpsd-amounts-wrapper button:hover,
+.wpsd-amounts-wrapper button.active {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+
+/* Amount Buttons Ended */
+
+.wpsd-master-wrapper .wpsd-wrapper-content #wpsd-donation-form-id #wpsd_donate_other_amount,
+.wpsd-modern-wrapper>.modern-right #wpsd-donation-form-id #wpsd_donate_other_amount {
+    border: 0px solid #dddddd;
+    margin: 0;
+    max-width: 100px!important;
+    display: inline-block;
+    height: 35px;
+    padding: 10px;
+    min-width: 80%;
+    font-weight: 600;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content #wpsd-donation-form-id #wpsd_donate_other_amount:focus,
+.wpsd-modern-wrapper>.modern-right #wpsd-donation-form-id #wpsd_donate_other_amount:focus {
+    border: 1px solid #CC0000!important;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donation-form-label.wpsd-captcha-label,
+.wpsd-modern-wrapper>.modern-right .wpsd-donation-form-label.wpsd-captcha-label {
+    padding-bottom: 0;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button,
+.wpsd-modern-wrapper>.modern-right .wpsd-donate-button {
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+    background: #24B47E;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s linear;
+    outline: none;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-modern-wrapper>.modern-right .wpsd-donate-button:focus,
+.wpsd-modern-wrapper>.modern-right .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-5 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-5 .wpsd-wrapper-content .wpsd-donate-button:focus,
+.wpsd-master-wrapper.wpsd-template-6 .wpsd-wrapper-content .wpsd-donate-button:hover,
+.wpsd-master-wrapper.wpsd-template-6 .wpsd-wrapper-content .wpsd-donate-button:focus {
+    background: #333333;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-total-donation-today {
+    color: #555;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.wpsd-master-wrapper .wpsd-wrapper-content .wpsd-total-donation-today span#wpsd-total-donation-number {
+    color: #FF0000;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+/*=============================
+Template 1
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #FF69B4;
+}
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #FF69B4;
+}
+
+.wpsd-master-wrapper.wpsd-template-1 .wpsd-form-title-border {
+    background-color: #FF69B4;
+}
+
+
+/*=============================
+Template 2
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #008B8B;
+}
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #008B8B;
+}
+
+.wpsd-master-wrapper.wpsd-template-2 .wpsd-form-title-border {
+    background-color: #008B8B;
+}
+
+
+/*=============================
+Template 3
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #1E90FF;
+}
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #1E90FF;
+}
+
+.wpsd-master-wrapper.wpsd-template-3 .wpsd-form-title-border {
+    background-color: #1E90FF;
+}
+
+
+/*=============================
+Template 4
+===============================*/
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-donate-button {
+    background: #DEB887;
+}
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-wrapper-content .wpsd-text-field:focus {
+    border: 1px solid #DEB887;
+}
+
+.wpsd-master-wrapper.wpsd-template-4 .wpsd-form-title-border {
+    background-color: #DEB887;
+}
+
+
+/*stripe css*/
+
+
+/**
+ * The CSS shown here will not be introduced in the Quickstart guide, but shows
+ * how you can use CSS to style your Element's container.
+ */
+
+.StripeElement {
+    box-sizing: border-box;
+    /*height: 40px;*/
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    margin-bottom: 20px;
+}
+
+.StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+}
+
+
+/*stripe css end*/
+
+
+/* Animate Progress bar Start */
+
+.wpsd-animated-progress {
+    width: 100%;
+    height: 20px;
+    margin: 0 0 20px 0;
+    border: 1px solid #EAEAEA;
+    overflow: hidden;
+    position: relative;
+    background-color: #EAEAEA;
+}
+
+.wpsd-animated-progress span {
+    height: 100%;
+    display: block;
+    width: 0;
+    color: rgb(255, 251, 251);
+    line-height: 18px;
+    font-size: 12px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+}
+
+.wpsd-animated-progress.progress-green span {
+    background-color: #48B553;
+}
+
+table.wpsd-fundraising-table {
+    border: 0px;
+}
+
+table.wpsd-fundraising-table tr th,
+table.wpsd-fundraising-table tr td {
+    border: 0px;
+    padding: 0px;
+    font-size: 17px;
+    text-align: center;
+}
+
+table.wpsd-fundraising-table tr th {
+    font-weight: 700;
+}
+
+
+/* Progressbar End */
+
+
+/*=============================
+      Responsive CSS
+  ===============================*/
+
+@media(max-width:991px) {
+    .wpsd-master-wrapper .wpsd-wrapper-content {
+        padding: 30px 10px;
+    }
+}
+
+@media(max-width:767px) {
+    .wpsd-master-wrapper {
+        max-width: 100%;
+    }
+    .wpsd-master-wrapper .wpsd-wrapper-content {
+        padding: 30px 15px;
+    }
+}

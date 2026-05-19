@@ -1,73 +1,114 @@
-=== WordPress Stripe Donations ===
-Contributors: mhmrajib, hmplugin
+=== AidWP – Donation & Payment Forms (Stripe Powered) ===
+Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: charity, donate, donation, donations, stripe
-Requires at least: 5.0
-Tested up to: 5.7.2
-Stable tag: 2.3
+Tags: donation, donation form, accept payments, payment form, stripe
+Requires at least: 5.4
+Tested up to: 6.9.4
+Stable tag: 3.3.1
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will display a form to accept donation via Stripe payment.
+Create fast donation and payment forms. Accept payments on WordPress with Stripe — no WooCommerce required.
 
 == Description ==
 
-This [Stripe Donations](https://hmplugin.com/wordpress-plugins/wordpress-stripe-donation-plugin/) plugin will allow you to collect donations on your website via Stripe payment method.
+**AidWP helps you create simple donation and payment forms on your WordPress site using Stripe — without WooCommerce or complex setup.**
 
-You can place a Donation form in any page where you want to collect money. Donors can use their Stripe account or Credit Card to donate money to you.
+Whether you’re a nonprofit, content creator, or small business, AidWP lets you accept one-time payments in minutes with a fast, secure, and mobile-friendly checkout experience.
 
-What makes this [Stripe Donations](https://hmplugin.com/wordpress-plugins/wordpress-stripe-donation-plugin/) plugin powerful is its usability. After installation and some quick settings, donors from around the world can start donating to you via Stripe.
+Designed to be lightweight and easy to use, AidWP is ideal when you just want to **accept donations or payments**, without turning your site into a full eCommerce store.
 
-This Stripe Donation is a simple, effective and powerful plugin you can trust.
 
-<strong> See How It Works!: </strong>
+📘 [Step-by-step guide](https://aidwp.com/accept-donations-wordpress-without-woocommerce/)
+
+
+**🔥 Why choose AidWP?**
+
+✅ Create donation & payment forms in minutes
+✅ Accept one-time payments
+✅ No WooCommerce required
+✅ Secure Stripe-powered checkout
+✅ Mobile-friendly and responsive
+✅ Clean, lightweight, and fast
+✅ Shortcode-based (works with any theme or page builder)
+
+
+**🎯 Who Is AidWP For?**
+
+AidWP is perfect for:
+
+* Nonprofits & charities accepting donations
+
+* Churches, charities & community organizations
+
+* Content creators & bloggers
+
+* Freelancers and consultants
+
+* Small businesses collecting payments
+
+* Event organizers
+
+* Fundraising campaigns
+
+* Anyone who needs a <strong>simple Stripe payment or donation form</strong>
+
+If you need payments without complexity, AidWP is the right tool.
+
+
+[__Live Demo__](https://aidwp.com/demo/)
+
+[youtube https://youtu.be/IGjaOmKJ4L4]
+
+
+**How It works**
+
+1. Connect your Stripe account
+
+2. Create a donation or payment form
+
+3. Embed the form anywhere using a shortcode
+
+4. Start accepting payments instantly
+
+No complex configuration. No unnecessary features.
+
+No products, carts, or checkout pages needed.
+
 
 https://youtu.be/fYP5CTIH90o
 
 
 **🌟 Plugin Features:**
 
-* Easy to install
-* Works with any WordPress theme
-* Fully Responsive
-* Shortcoded
+* One-time payments
+* Fixed or custom donation amounts
+* Secure Stripe checkout
+* Shortcode support
 * Minimal settings required
-* Super Easy and Fast
-* Accept donation via Stripe payment
+* Mobile-friendly design
+* Works with any WordPress theme
 * Donors List Panel
 * 150+ Currency Available
 * Two types of email integrated: Admin and Receipient
-* 5 Template Colors
 * Strong Customer Authentication (SCA) supports for European customers
 
 
-**🌟 Form Features:**
+**🌟 Available Form Settings:**
 
 * Form Title
 * Form Description
 * Form Banner
-* Dropdown 'Donation For' Options
-* Set various Donation Amounts
-* Show/Hide Banner
-* Upload Banner
-* Show/Hide Form Labels
-* Customizable Form Labels
-* Customizable Form Button
-
-
-**🌟 Receipt Email Settings:**
-
-* Customizable Email Subject
-* Customizable Email Heading
-* Customizable Email Footnote
+* Dropdown 'Donation For' options
+* Set various donation amounts
+* Show-Hide form Labels
+* Customizable form submit button
 
 
 **👍 Customizable Thank You Page:**
 
-A good business practice is say thank you to your new and returning customers. A good thank you quote or message will help build that strong customer loyalty that keeps your business afloat.
-
-Stripe Donation Plugin provides a built in ‘Thank You’ page which can be customize with Elementor.
+This stripe donation plugin provides a built in ‘Thank You’ page which can be customize with Elementor.
 
 
 ➡️ Useage of Shortcode:⬅️
@@ -75,6 +116,49 @@ Stripe Donation Plugin provides a built in ‘Thank You’ page which can be cus
 <strong> To display donation form use the below shortcode in any page </strong>
 
 <pre> [wp_stripe_donation] </pre>
+
+
+**🌟 Pro Features - Basic:**
+
+* Show-Hide 'Donation For' From Form
+* Enable-Disable Admin Notice Email
+* Enable-Disable Receipt Email
+* Receipt Email From Name Option
+* Receipt Email From Email Option
+* Display All Donations in Donation List Panel
+* Ability to Delete Test Data From Donation List Panel
+* Apply Donation For From Url
+
+
+**🌟 Pro Features - Professional:**
+
+* Can Be Use For Fundraising
+* Donor Address Fields Available
+* Export Donation Data to CSV and Excel
+* Google reCaptcha Integrated
+* Number Matching Captcha to Prevent Bot Attack
+* Donor Comments Field Available
+* Apply a Condition to the Donors
+* Receipt Email in HTML Foramat
+* Display Donor List With Shortocode
+* Customed "Thank You" Page
+* Delete Data From Donation List Panel
+* Set Form Width Option
+* 3 Form Header Options Available
+* Form Button Width Option Available
+* Form Border Width, Color, Radius
+* Form Padding, Font Color, Background Color Option Available
+* Form Input Border Width, Color, Radius Option Available
+* Form Input Font Color and Size Option Available
+* Form Input Padding Option Available
+* Form Input Background Color Option Option Available
+* Display Total Donation Today
+* Form Button Background, Font Color Option Available
+* Enable disable receipt email from stripe
+* Receipt Email Greeting Message Option Available
+* Multi Panel Donation Form For Better View
+
+Perfect for growing sites that need more flexibility and control.
 
 
 <strong> SCA supports for European customers: </strong>
@@ -85,46 +169,41 @@ https://youtu.be/TdyJ0F8jWu0
 **📋 Translation Ready:**
 
 * POT file included (/languages/)
+* Bengoli
+* French (France)
+* Spanish (Spain)
+* Italian
+* German
+* Dutch
+* Polish
+* Japanese
 
 
-**👨‍💻 Demo / Support/ Live Chat**
+**💡 Security & Compliance**
 
-[Stripe Donations: See Demo](https://demo.hmplugin.com/wordpress-stripe-donation-plugin/)
-
-
-**👨‍💻 More About Stripe Donation**
-
-[Stripe Donation: See More](https://hmplugin.com/wordpress-plugins/wordpress-stripe-donation-plugin/)
+All payments are processed securely through Stripe.
+AidWP does not store credit card details on your website.
 
 
-**👍 Give us a Feedback/Rating**
+**📌 Disclaimer**
 
-If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends. This will motivate us and help us to grow.
-[Rate Us](https://wordpress.org/support/plugin/wp-stripe-donation/reviews/#new-post)
+Stripe is a registered trademark of Stripe, Inc. This plugin is not affiliated with or endorsed by Stripe.
 
 
-**🔥 Other Plugins from [HM Plugin](https://hmplugin.com):**
+**Support**
 
-👉 [WP Books Gallery](https://wordpress.org/plugins/wp-books-gallery/) Books Gallery Plugin for WordPress
-👉 [Worldwide Breaking News Headlines](https://wordpress.org/plugins/worldwide-breaking-news-headlines/) Breaking News, Headlines Widget Plugin for WordPress
-👉 [WP Top News](https://wordpress.org/plugins/wp-top-news/) Top News, Breaking News, Headlines Shortcoded Plugin for WordPress
-👉 [WordPress Stripe Donation](https://wordpress.org/plugins/wp-stripe-donation/) Donations Coolection Plugin for WordPress using Stripe Payement
-👉 [Tiny Bar](https://wordpress.org/plugins/tiny-bar/) Message Bar Plugin for WordPress to display Message at Top/Bottom Bar of a web page
-👉 [HM – Cool Author Box](https://wordpress.org/plugins/hm-cool-author-box-widget/) Author Box plugin for WordPress to display author info
-👉 [HM Resume Manager](https://wordpress.org/plugins/hm-resume-manager/) A Resume/CV Manager Plugin for WordPress
-👉 [HM Product Catalog](https://wordpress.org/plugins/hm-product-catalog/) A Product Catalog Plugin for WordPress
-👉 [HM Wc Product Advertiser](https://wordpress.org/plugins/hm-wc-product-advertiser/) Product Advertiser Plugin for Wocommerce
-👉 [WP Scroll To Post](https://wordpress.org/plugins/wp-scroll-to-post/) Display random post(Single) at the bottom right corner
-👉 [HM Recent Posts Widget](https://wordpress.org/plugins/hm-recent-posts-widget/) Ticker Post plugin for WordPress
-👉 [WP Alert Bars](https://wordpress.org/plugins/wp-alert-bars/) Notification/Alert box Plugin for WordPress
-👉 [FaceBook LikeBox](https://wordpress.org/plugins/hm-simple-facebook-page/) A FaceBook LikeBox Plugin for WordPress
-👉 [WP Display FAQ](https://wordpress.org/plugins/wp-display-faq/) FAQs manager plugin for WordPress
-👉 [HM Logo Showcase](https://wordpress.org/plugins/hm-logo-showcase/) Logo manager plugin for WordPress
+Need help?
+Use the WordPress.org support forum — we respond quickly and actively support our users.
+
+
+**Upgrade to Pro**
+
+If AidWP helps you accept payments or donations, consider upgrading to [AidWP Pro](https://aidwp.com/) to unlock advanced features and support ongoing development.
 
 
 == Installation ==
 
-Install WP Stripe Donation as a regular WordPress plugin. Here are different ways to install plugin:
+Install AidWP as a regular WordPress plugin. Here are different ways to install plugin:
 
 **Install by search plugin:**
 
@@ -145,25 +224,230 @@ Install WP Stripe Donation as a regular WordPress plugin. Here are different way
 
 == Frequently Asked Questions ==
 
-= I have installed the plugin. What next? =
+= Does this plugin require Stripe? =
 
-Setup the Private and Secret Key. And insert the shortcode to any page.
+Yes. AidWP requires a Stripe account to process payments and donations.
+
+= Do I need WooCommerce? =
+
+No. AidWP works independently and does not require WooCommerce.
+
+= Can I use this for non-donation payments? =
+
+Absolutely. AidWP works for donations, services, fees, and general payments.
+
+= Is it mobile-friendly? =
+
+Yes. All forms are responsive and work on all devices.
+
+= How can I Display the Donation Form? =
+
+After activating the plugin, you will see “WP Stripe Donation” in WordPress Admin Dashboard.
+
+Firstly, Go to “Key Settings” and add your stripe keys which you will get from your stripe account (See attached video).
+
+Secondly, Create a page and name it as you wish like "Donation"
+
+Finally, Put the shortcode [wp_stripe_donation] in that page and Update it.
+
+You will see your donation form on that page.
+
+= How can I Display Multiple Amounts? =
+
+This is very easy.
+
+Go to “General Settings” and you will see an option “Amounts” there.
+
+Put your amounts like “5,10,50,100,500,100” and you will see them in the form.
+
+= How can I Change the Currency? =
+
+Go to “General Settings” and you will see an option “Currency” there.
+
+Select your Currency from the drop down and save it. 
+
+You will see it immediately in the amount section in the donation form.
+
+= Can I use this for multiple donation items or product items? =
+
+Yes, you can do it.
+
+Go to “General Settings” and you will see an option “Donation For Options” there.
+
+Put your items like “Item One,Item Two,Item Three” and you will see them in the form drop down section.
 
 
 == Screenshots ==
 
-1. Donation Form Template 1
-2. Donation Form Template 2
-3. Donation Form Template 3
-4. Donation Form Template 4
-5. Donation Form Template 5
-6. SCA supports for European customers
-7. Donation General Settings
-8. Donation Template Settings
-9. Customizable Receipt email
+1. Accept Donations & Payments in Minutes
+2. No WooCommerce Required
+3. Simple & Secure Stripe Setup
+4. Flexible Donation & Payment Amounts
+5. Mobile-Friendly Checkout Experience
+6. Works with Any Theme or Page Builder
+7. Donation List Panel
+8. Unlock Advanced Features with Pro
 
 
 == Changelog ==
+
+= 3.3.1 =
+* Improved usability and donation experience
+* Freemius SDK updated to 2.13.1
+* Fixed minor bugs
+* Improved CSS for cleaner layouts
+* Improved code structure for better stability
+* Form amounts styling added
+
+= 3.3.0 =
+* Freemius SDK updated to 2.13.0
+* Admin form settings page layout improved
+* Code optimized
+
+= 3.2.9 =
+* Freemius SDK update to 2.12.2
+* Language file loading process changed
+* Code optimized
+
+= 3.2.8 =
+* Security token issue fixed
+* Prepare applied before donation info db insert
+* Maximum amount option added
+* Freemius SDK update to 2.12.0
+
+= 3.2.7 =
+* Updated Freemius SDK to the latest version
+
+= 3.2.6 =
+* Language file Loading action hook fixed
+* Exclude security token option added
+* Code optimized
+* Minor bug fixed
+
+= 3.2.5 =
+* Freemius SDK update to 2.9.0
+* Minor bug fixed
+* Code optimized
+
+= 3.2.4 =
+* Freemius SDK update to 2.8.1
+* Minor bug fixed
+
+= 3.2.3 =
+* Stripe js loading in the donation form only
+* Code reorganized
+* Amount last value comma issue fixed
+* Form template page added
+
+= 3.2.2 =
+* Freemius SDK updated to 2.6.2
+* Font Awesome Free 6.1.1 integrated
+* Responsive issue fixed
+* Donation description text alignment fixed
+* Currency symbol applied to the donation form
+* Stripe class conflict issue fixed
+* Admin styles improved
+* Form CSS fixed
+
+= 3.2.1 =
+* Freemius SDK update to 2.5.10
+
+= 3.2.0 =
+* Code optimized
+* Freemius SDK upgraded
+
+= 3.1.9 =
+* Minimum amount issue fixed
+* Deprecated function get_page_by_title issue fixed
+* Donation amount css issue fixed
+* WP editor applied to form description
+
+= 3.1.8 =
+* Selectize console error fixed
+* General settings page image help popup added
+* Minimum amount feature added
+* Form settings page image help popup added
+
+= 3.1.7 =
+* Assets loading issue fixed
+* Form required field symbol added
+
+= 3.1.6 =
+* Load assets only to donation form page
+* Styling applied to amount blocks
+* Freemius sdk updated
+
+= 3.1.5 =
+* Freemius sdk updated
+* Admin sidebar improved
+* Form label color option added
+* Bug fixed
+
+= 3.1.4 =
+* Bug fixed
+* CSS fixed
+
+= 3.1.3 =
+* Freemius version upgraded
+* Sidebar aidwp link updated
+* Disable Idempotency Key Checking
+
+= 3.1.2 =
+* Security fix
+* Colon hidden from Telephone and Card Details
+* Placeholder issue fixed in comments fields in payment form
+
+= 3.1.1 =
+* Recept email format improved
+* Form amount label hide and applied to amount placeholder
+* Admin css improved
+* Code optimized
+
+= 3.1 =
+* Recept email format improved
+* Form amount label hide and applied to amount placeholder
+* Admin css improved
+* Code optimized
+
+= 3.0 =
+* Donation form extra space issue fixed
+* Code optimized
+* CSS fixed
+* Admin Donation list loading issue after delete fixed
+* Form donation amount item list style changed
+* Zero decimal currencies issue fixed
+
+= 2.9 =
+* Security fix
+* Card element font default color changed
+
+= 2.8 =
+* Receipt remail default webmaster@!yourdomain issue fixed
+* Form loader gif security issue solved
+* Card element font color issue fixed
+* Card element label text option added to form settings
+* 7 New languages added
+
+= 2.7 =
+* Secure Ajax Requests with Nonces
+* Stripe SDK exclude option to avoid conflict
+* Error message organized
+* Email validation bug fixed
+
+= 2.6 =
+* Fontawesome icon pack added
+* Code optimized and organized
+
+= 2.5 =
+* Card Element console error fixed in other page
+* Load stripe checkout script at footer
+* Usage video tutorial added to Usage & Tutorial page
+
+= 2.4 =
+* Code optimized/organized
+* CSS improved
+* Freenius integrated
+* Loading gif display issue fixed
 
 = 2.3 =
 * Stripe.js and other related scripts/styles will only load in donation page
