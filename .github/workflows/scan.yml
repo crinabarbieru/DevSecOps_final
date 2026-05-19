@@ -18,7 +18,7 @@ jobs:
       - name: Start Docker 
         run: |
           cd docker
-          docker-compose up -d
+          docker compose up -d
 
       - name: Wait for WordPress
         run: sleep 30
