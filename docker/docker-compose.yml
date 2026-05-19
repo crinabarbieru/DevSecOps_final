@@ -11,6 +11,7 @@ services:
 
   wordpress:
     image: crinabarbieru/wordpress-vulnerable:latest 
+    platform: linux/amd64
     ports:
       - "8080:80"
     environment:
