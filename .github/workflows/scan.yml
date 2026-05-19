@@ -26,7 +26,7 @@ jobs:
       - name: Run WPScan
         run: |
           mkdir -p scans
-          docker run --rm wpscanteam/wpscan \
+          docker run --rm --network host wpscanteam/wpscan \
             --url http://localhost:8080 \
             --api-token ${{ secrets.WPSCAN_API_TOKEN }} \
             --enumerate vp \
