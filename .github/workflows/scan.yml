@@ -27,7 +27,7 @@ jobs:
         run: |
           mkdir -p scans
           docker run --rm wpscanteam/wpscan \
-            --url http://host.docker.internal:8080 \
+            --url http://localhost:8080 \
             --api-token ${{ secrets.WPSCAN_API_TOKEN }} \
             --enumerate vp \
             --plugins-detection aggressive \
