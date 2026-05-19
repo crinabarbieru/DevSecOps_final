@@ -1,0 +1,40 @@
+name: WordPress Scan Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  wordpress-wpscan:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Create Timestamp
+        run: echo "TIMESTAMP=$(date +'%Y%m%d_%H%M%S')" >> $GITHUB_ENV
+
+      - name: Start Docker 
+        run: |
+          cd docker
+          docker-compose up -d
+
+      - name: Wait for WordPress
+        run: sleep 30
+
+      - name: Run WPScan
+        run: |
+          mkdir -p scans
+          docker run --rm wpscanteam/wpscan \
+            --url http://host.docker.internal:8080 \
+            --api-token ${{ secrets.WPSCAN_API_TOKEN }} \
+            --enumerate vp \
+            --plugins-detection aggressive \
+            > scans/github_scan_results_${{ env.TIMESTAMP }}.txt || true
+
+      - name: Save Scan File as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wpscan-reports
+          path: scans/
